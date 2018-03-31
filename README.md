@@ -1,0 +1,2 @@
+# Plain
+Theme for Typecho.
