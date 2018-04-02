@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('prism.css'); ?>">
+	<link rel="icon" href="<?php $this->options->themeUrl('commentsbg.gif'); ?>" sizes="32x32"/>
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
