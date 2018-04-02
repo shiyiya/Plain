@@ -30,6 +30,6 @@ fetch('https://sslapi.hitokoto.cn/?encode=json').then(response=>response.text())
         }
     })
     </script>
-    <script src="<?php $this->options->themeUrl('prism.js');?>"></script>
+    <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 </body>
 </html>

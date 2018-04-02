@@ -14,7 +14,7 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.css'); ?>">
 	<link rel="icon" href="<?php $this->options->themeUrl('commentsbg.gif'); ?>" sizes="32x32"/>
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
