@@ -4,6 +4,7 @@
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="no-transform " /> 
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php $this->archiveTitle(array(
