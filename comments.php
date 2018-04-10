@@ -73,7 +73,7 @@ echo $commentClass;
             <textarea placeholder="Write here···" rows="8" cols="50" name="text" id="textarea" class="textarea" required ><?php $this->remember('text'); ?></textarea>
             </p>
             <p>
-                <input type="submit" id="submit" class="submit" />
+                <input type="submit" id="submit" class="submit" value="提交"/>
             </p>
             </div>
     	</form>

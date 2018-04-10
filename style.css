@@ -64,7 +64,7 @@ header a {
 }
 
 .post-content p {
-    text-indent: 2em;
+	line-height: 2;
 }
 
 .post-content img, pre {
