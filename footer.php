@@ -1,10 +1,13 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div id="hitokoto" class="center"><span id="from">Godme</span>：<span id="content">Everyone is their own God.</span></div>
 <script>
-fetch('https://sslapi.hitokoto.cn/?encode=json').then(response=>response.text()).then(text=>{
-    document.getElementById('from').innerText = JSON.parse(`${text}`).from;
-    document.getElementById('content').innerText = JSON.parse(`${text}`).hitokoto;
-})
+fetch('https://sslapi.hitokoto.cn/?encode=json').then(function (_) {
+    var _ = _.text();
+    return _;
+}).then(function (_) {
+    document.getElementById('from').innerText = JSON.parse('' + _).from;
+    document.getElementById('content').innerText = JSON.parse('' + _).hitokoto;
+});
 </script>
 <a  href="#" id="back-to-top"><span>Top</span></a>
 <footer id="footer" role="contentinfo">
@@ -20,15 +23,16 @@ fetch('https://sslapi.hitokoto.cn/?encode=json').then(response=>response.text())
 <canvas></canvas>
 <script>
    var c=document.getElementsByTagName("canvas")[0],x=c.getContext("2d"),pr=window.devicePixelRatio||1,w=window.innerWidth,h=window.innerHeight,f=90,q,m=Math,r=0,u=m.PI*2,v=m.cos,z=m.random;c.width=w*pr;c.height=h*pr;x.scale(pr,pr);x.globalAlpha=0.6;function i(){x.clearRect(0,0,w,h);q=[{x:0,y:h*0.7+f},{x:0,y:h*0.7-f}];while(q[1].x<w+f){d(q[0],q[1])}}function d(i,j){x.beginPath();x.moveTo(i.x,i.y);x.lineTo(j.x,j.y);var k=j.x+(z()*2-0.25)*f,n=y(j.y);x.lineTo(k,n);x.closePath();r-=u/-50;x.fillStyle="#"+(v(r)*127+128<<16|v(r+u/3)*127+128<<8|v(r+u/3*2)*127+128).toString(16);x.fill();q[0]=q[1];q[1]={x:k,y:n}}function y(p){var t=p+(z()*2-1.1)*f;return(t>h||t<0)?y(p):t}document.onclick=i;document.ontouchstart=i;i();     
-    document.addEventListener('scroll',function(){
-        if(document.documentElement.scrollTop > (1.5 * document.documentElement.clientHeight)){
-            document.getElementById('back-to-top').style.display = 'block';
-        }else if(document.body.scrollTop > (1.5 * document.getElementsByClassName('scroll')[0].clientHeight)){//万恶的IE
-            document.getElementById('back-to-top').style.display = 'block';
-        }else{
-            document.getElementById('back-to-top').style.display = 'none';
-        }
-    })
+   document.addEventListener('scroll', function () {
+    if (document.documentElement.scrollTop > 1.5 * document.documentElement.clientHeight) {
+        document.getElementById('back-to-top').style.display = 'block';
+    } else if (document.body.scrollTop > 1.5 * document.getElementsByClassName('scroll')[0].clientHeight) {
+        //IE
+        document.getElementById('back-to-top').style.display = 'block';
+    } else {
+        document.getElementById('back-to-top').style.display = 'none';
+    }
+});
     </script>
     <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 </body>

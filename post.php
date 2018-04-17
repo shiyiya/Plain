@@ -12,7 +12,7 @@
         <div class="post-content">
             <?php $this->content(); ?>
         </div>
-        <p itemprop="keywords" class="tags"><?php _e(''); ?><?php $this->tags(', ', true, ''); ?></p>
+        <p itemprop="keywords" class="tags"><?php _e(''); ?><?php $this->tags(' , ', true, ''); ?></p>
     </article>
     <ul class="post-near">
         <li class="left">上一篇: <?php $this->thePrev('%s','没有了'); ?></li>

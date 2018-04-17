@@ -6,7 +6,7 @@
  * @author  ShiYi
  * 
  * @version last
- * @link http://www.runtua.cn
+ * @link https://www.runtua.cn
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
