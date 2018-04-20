@@ -1,15 +1,4 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -54,23 +43,16 @@ header {
 	border-bottom: 1px solid #d8dadc
 }
 
-.content li,.comment-list li, blockquote li {
-    margin: 0;
-    padding: 0;
-	list-style: none
+.content ul, .comment-list ol, blockquote ol, blockquote ul {
+	margin: 0;
+	padding: 0;
 }
-
-.content ul,.comment-list ol, blockquote ol, blockquote ul{
-    margin: 0;
-    padding: 0; 
-} 
 
 #root {
 	max-width: 90%;
 	width: 720px;
 	margin: 3em auto;
 	display: block;
-    /* padding: 5%; */
 }
 
 header a {
@@ -102,8 +84,9 @@ header a {
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-li {
-	padding: .2em
+.post-item {
+	padding: .2em;
+	list-style: none;
 }
 
 .post {
@@ -166,8 +149,8 @@ nav a {
 }
 
 #comments input, #comments textarea {
-    border: none;
-    outline: none;
+	border: none;
+	outline: none;
 	background: transparent;
 	padding: 5px 0;
 	font-family: inherit;
@@ -207,7 +190,6 @@ input.button:hover, input.submit:hover {
 	input#author, input#mail, input#url {
 		width: 100%
 	}
-
 	input#author, input#mail {
 		margin-bottom: .5em
 	}
@@ -271,7 +253,7 @@ canvas {
 }
 
 .job {
-    /* position: relative; */
+	/* position: relative; */
 	display: inline-block;
 	margin: 2em 0;
 	transform: rotate(-2deg);
@@ -283,248 +265,199 @@ canvas {
 		-webkit-transform: translateY(1.5px) rotate(1.5deg);
 		transform: translateY(1.5px) rotate(1.5deg)
 	}
-
 	4% {
 		-webkit-transform: translateY(-1.5px) rotate(-.5deg);
 		transform: translateY(-1.5px) rotate(-.5deg)
 	}
-
 	6% {
 		-webkit-transform: translateY(1.5px) rotate(-1.5deg);
 		transform: translateY(1.5px) rotate(-1.5deg)
 	}
-
 	8% {
 		-webkit-transform: translateY(-1.5px) rotate(-1.5deg);
 		transform: translateY(-1.5px) rotate(-1.5deg)
 	}
-
 	10% {
 		-webkit-transform: translateY(2.5px) rotate(1.5deg);
 		transform: translateY(2.5px) rotate(1.5deg)
 	}
-
 	12% {
 		-webkit-transform: translateY(-.5px) rotate(1.5deg);
 		transform: translateY(-.5px) rotate(1.5deg)
 	}
-
 	14% {
 		-webkit-transform: translateY(-1.5px) rotate(1.5deg);
 		transform: translateY(-1.5px) rotate(1.5deg)
 	}
-
 	16% {
 		-webkit-transform: translateY(-.5px) rotate(-1.5deg);
 		transform: translateY(-.5px) rotate(-1.5deg)
 	}
-
 	18% {
 		-webkit-transform: translateY(.5px) rotate(-1.5deg);
 		transform: translateY(.5px) rotate(-1.5deg)
 	}
-
 	20% {
 		-webkit-transform: translateY(-1.5px) rotate(2.5deg);
 		transform: translateY(-1.5px) rotate(2.5deg)
 	}
-
 	22% {
 		-webkit-transform: translateY(.5px) rotate(-1.5deg);
 		transform: translateY(.5px) rotate(-1.5deg)
 	}
-
 	24% {
 		-webkit-transform: translateY(1.5px) rotate(1.5deg);
 		transform: translateY(1.5px) rotate(1.5deg)
 	}
-
 	26% {
 		-webkit-transform: translateY(.5px) rotate(.5deg);
 		transform: translateY(.5px) rotate(.5deg)
 	}
-
 	28% {
 		-webkit-transform: translateY(.5px) rotate(1.5deg);
 		transform: translateY(.5px) rotate(1.5deg)
 	}
-
 	30% {
 		-webkit-transform: translateY(-.5px) rotate(2.5deg);
 		transform: translateY(-.5px) rotate(2.5deg)
 	}
-
 	32% {
 		-webkit-transform: translateY(1.5px) rotate(-.5deg);
 		transform: translateY(1.5px) rotate(-.5deg)
 	}
-
 	34% {
 		-webkit-transform: translateY(1.5px) rotate(-.5deg);
 		transform: translateY(1.5px) rotate(-.5deg)
 	}
-
 	36% {
 		-webkit-transform: translateY(-1.5px) rotate(2.5deg);
 		transform: translateY(-1.5px) rotate(2.5deg)
 	}
-
 	38% {
 		-webkit-transform: translateY(1.5px) rotate(-1.5deg);
 		transform: translateY(1.5px) rotate(-1.5deg)
 	}
-
 	40% {
 		-webkit-transform: translateY(-.5px) rotate(2.5deg);
 		transform: translateY(-.5px) rotate(2.5deg)
 	}
-
 	42% {
 		-webkit-transform: translateY(2.5px) rotate(-1.5deg);
 		transform: translateY(2.5px) rotate(-1.5deg)
 	}
-
 	44% {
 		-webkit-transform: translateY(1.5px) rotate(.5deg);
 		transform: translateY(1.5px) rotate(.5deg)
 	}
-
 	46% {
 		-webkit-transform: translateY(-1.5px) rotate(2.5deg);
 		transform: translateY(-1.5px) rotate(2.5deg)
 	}
-
 	48% {
 		-webkit-transform: translateY(-.5px) rotate(.5deg);
 		transform: translateY(-.5px) rotate(.5deg)
 	}
-
 	50% {
 		-webkit-transform: translateY(.5px) rotate(.5deg);
 		transform: translateY(.5px) rotate(.5deg)
 	}
-
 	52% {
 		-webkit-transform: translateY(2.5px) rotate(2.5deg);
 		transform: translateY(2.5px) rotate(2.5deg)
 	}
-
 	54% {
 		-webkit-transform: translateY(-1.5px) rotate(1.5deg);
 		transform: translateY(-1.5px) rotate(1.5deg)
 	}
-
 	56% {
 		-webkit-transform: translateY(2.5px) rotate(2.5deg);
 		transform: translateY(2.5px) rotate(2.5deg)
 	}
-
 	58% {
 		-webkit-transform: translateY(.5px) rotate(2.5deg);
 		transform: translateY(.5px) rotate(2.5deg)
 	}
-
 	60% {
 		-webkit-transform: translateY(2.5px) rotate(2.5deg);
 		transform: translateY(2.5px) rotate(2.5deg)
 	}
-
 	62% {
 		-webkit-transform: translateY(-.5px) rotate(2.5deg);
 		transform: translateY(-.5px) rotate(2.5deg)
 	}
-
 	64% {
 		-webkit-transform: translateY(-.5px) rotate(1.5deg);
 		transform: translateY(-.5px) rotate(1.5deg)
 	}
-
 	66% {
 		-webkit-transform: translateY(1.5px) rotate(-.5deg);
 		transform: translateY(1.5px) rotate(-.5deg)
 	}
-
 	68% {
 		-webkit-transform: translateY(-1.5px) rotate(-.5deg);
 		transform: translateY(-1.5px) rotate(-.5deg)
 	}
-
 	70% {
 		-webkit-transform: translateY(1.5px) rotate(.5deg);
 		transform: translateY(1.5px) rotate(.5deg)
 	}
-
 	72% {
 		-webkit-transform: translateY(2.5px) rotate(1.5deg);
 		transform: translateY(2.5px) rotate(1.5deg)
 	}
-
 	74% {
 		-webkit-transform: translateY(-.5px) rotate(.5deg);
 		transform: translateY(-.5px) rotate(.5deg)
 	}
-
 	76% {
 		-webkit-transform: translateY(-.5px) rotate(2.5deg);
 		transform: translateY(-.5px) rotate(2.5deg)
 	}
-
 	78% {
 		-webkit-transform: translateY(-.5px) rotate(1.5deg);
 		transform: translateY(-.5px) rotate(1.5deg)
 	}
-
 	80% {
 		-webkit-transform: translateY(1.5px) rotate(1.5deg);
 		transform: translateY(1.5px) rotate(1.5deg)
 	}
-
 	82% {
 		-webkit-transform: translateY(-.5px) rotate(.5deg);
 		transform: translateY(-.5px) rotate(.5deg)
 	}
-
 	84% {
 		-webkit-transform: translateY(1.5px) rotate(2.5deg);
 		transform: translateY(1.5px) rotate(2.5deg)
 	}
-
 	86% {
 		-webkit-transform: translateY(-1.5px) rotate(-1.5deg);
 		transform: translateY(-1.5px) rotate(-1.5deg)
 	}
-
 	88% {
 		-webkit-transform: translateY(-.5px) rotate(2.5deg);
 		transform: translateY(-.5px) rotate(2.5deg)
 	}
-
 	90% {
 		-webkit-transform: translateY(2.5px) rotate(-.5deg);
 		transform: translateY(2.5px) rotate(-.5deg)
 	}
-
 	92% {
 		-webkit-transform: translateY(.5px) rotate(-.5deg);
 		transform: translateY(.5px) rotate(-.5deg)
 	}
-
 	94% {
 		-webkit-transform: translateY(2.5px) rotate(.5deg);
 		transform: translateY(2.5px) rotate(.5deg)
 	}
-
 	96% {
 		-webkit-transform: translateY(-.5px) rotate(1.5deg);
 		transform: translateY(-.5px) rotate(1.5deg)
 	}
-
 	98% {
 		-webkit-transform: translateY(-1.5px) rotate(-.5deg);
 		transform: translateY(-1.5px) rotate(-.5deg)
 	}
-
-	0%,to {
+	0%, to {
 		-webkit-transform: translate(0) rotate(0);
 		transform: translate(0) rotate(0)
 	}
