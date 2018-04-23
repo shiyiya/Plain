@@ -1,4 +1,4 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -43,9 +43,13 @@ header {
 	border-bottom: 1px solid #d8dadc
 }
 
-.content ul, .comment-list ol, blockquote ol, blockquote ul {
+.content ul, .comment-list ol, blockquote ol, blockquote ul, .page-navigator, .post-meta, .post-near {
 	margin: 0;
 	padding: 0;
+}
+
+.page-navigator li {
+	padding: .2em;
 }
 
 #root {
@@ -119,24 +123,8 @@ blockquote {
 	margin: 1em
 }
 
-code, kbd, tt, var {
-	font-size: .92857em;
-	font-family: "Lucida Console", Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	padding: 2px 6px;
-	background: #f3f3f0;
-	word-break: break-all
-}
-
-pre {
-	background: #f3f3f0;
-	font-size: 15px;
-	margin-bottom: .5em;
-	padding: 1em;
-	overflow: auto
-}
-
-pre code {
-	padding: 0
+blockquote li {
+	list-style: none;
 }
 
 #footer {
@@ -174,7 +162,7 @@ input#author, input#mail, input#url {
 	width: 32.8%
 }
 
-input.button, input.submit {
+#comments input.button, #comments input.submit {
 	line-height: 2em;
 	color: white;
 	padding: 3px 10px;
@@ -218,8 +206,9 @@ span.comment-author cite, span.comment-author cite a {
 }
 
 .respond {
-	padding-top: 4em;
-	border-top: 1px solid #ddd
+	margin-top: 2em;
+	padding-top: 2em;
+	border-top: 1px solid #ddd;
 }
 
 canvas {
@@ -252,10 +241,10 @@ canvas {
 	height: 3em;
 }
 
-.job {
+.notice {
 	/* position: relative; */
 	display: inline-block;
-	margin: 2em 0;
+	margin: 1em 0;
 	transform: rotate(-2deg);
 	animation: shake 5s infinite ease-in-out;
 }
@@ -463,17 +452,17 @@ canvas {
 	}
 }
 
-.job p {
+.notice p {
 	font-weight: bold;
 	font-size: 1.5em;
 	margin: 0;
 }
 
-.job a {
+.notice a {
 	color: chocolate;
 }
 
-.job:after, .job:before {
+.notice:after, .notice:before {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -486,10 +475,10 @@ canvas {
 	mix-blend-mode: multiply;
 }
 
-.job:before {
+.notice:before {
 	transform: scaleX(.95) rotate(6deg);
 }
 
-.job:after {
+.notice:after {
 	transform: scale(1.1);
 }

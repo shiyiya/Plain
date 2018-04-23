@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php 
 /**
- * recent
+ * recent归档
  * 
  * @package custom
  */

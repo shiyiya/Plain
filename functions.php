@@ -1,6 +1,11 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
+function themeConfig($form) {
+    $Notice = new Typecho_Widget_Helper_Form_Element_Text('Notice', NULL, NULL, _t('公告'), _t('公告内容'));
+	$form->addInput($Notice);
+}
+
 // 添加浏览数字段到内容
 function themeFields($layout) {
     $viewsNum = new Typecho_Widget_Helper_Form_Element_Text('viewsNum', NULL, 0, _t('文章浏览数'), _t('文章浏览数统计'));

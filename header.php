@@ -13,7 +13,8 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-    <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw='); ?>
+    <meta name="keywords" content="<?php $this->keywords() ?>" />
+    <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.css'); ?>">
 	<link rel="icon" href="<?php $this->options->themeUrl('./favicon.ico'); ?>" sizes="32x32"/>
@@ -42,5 +43,5 @@
             <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
         <?php endwhile; ?>
         </nav>
-        <div class="job"><p>I'm looking for a job right now!</p></div>
+        <div class="notice"><p><?php $this->options->Notice(); ?></p></div>
     </header><!-- end #header -->

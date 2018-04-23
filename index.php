@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ * 极简主题，专注创作。
  * 
  * @package Plain
  * @author  ShiYi
