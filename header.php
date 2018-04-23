@@ -43,5 +43,9 @@
             <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
         <?php endwhile; ?>
         </nav>
-        <div class="notice"><p><?php $this->options->Notice(); ?></p></div>
+        <?php if($this->options->Notice()):?>
+            <div class="notice"><p><?php $this->options->Notice(); ?></p></div>
+        <?php endif; ?>
+            
+        
     </header><!-- end #header -->

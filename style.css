@@ -223,7 +223,7 @@ canvas {
 }
 
 #hitokoto {
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
 #back-to-top {
@@ -481,4 +481,12 @@ canvas {
 
 .notice:after {
 	transform: scale(1.1);
+}
+
+img[alt="friend"] {
+	height: 40px;
+	width: 40px;
+	border-radius: 40px;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
 }
