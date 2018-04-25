@@ -43,5 +43,8 @@ function viewCounter($archive){
         Typecho_Cookie::set('__typecho_views', $views); //记录到cookie
     }
 }
+function is_pjax(){
+    return array_key_exists('HTTP_X_PJAX', $_SERVER) && $_SERVER['HTTP_X_PJAX'];
+}
 
 

@@ -10,15 +10,33 @@ html, body, div, span, object, iframe, p, blockquote, pre, abbr, address, cite, 
 }
 
 .left {
-	float: left
+	float: left;
 }
 
 .right {
-	float: right
+	float: right;
 }
 
 .clearfix {
-	clear: both
+	clear: both;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+	-webkit-appearance: button;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 5px;
 }
 
 body {
@@ -38,12 +56,17 @@ ul {
 	margin-bottom: 1em
 }
 
-header {
+#header {
 	padding: .3em 0;
-	border-bottom: 1px solid #d8dadc
+	border-bottom: 1px solid #d8dadc;
 }
 
-.content ul, .comment-list ol, blockquote ol, blockquote ul, .page-navigator, .post-meta, .post-near {
+#header h1 {
+	margin: 0;
+	padding: 0
+}
+
+.content ul, .comment-list, blockquote ol, blockquote ul, .page-navigator, .post-meta, .post-near {
 	margin: 0;
 	padding: 0;
 }
@@ -82,10 +105,6 @@ header a {
 #comments a:hover, #footer a:hover, .post a:hover, .post-near a:hover {
 	color: #32393f;
 	border-bottom: 1px solid #32393f
-}
-
-#back-to-top:hover {
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .post-item {
@@ -143,7 +162,7 @@ nav a {
 	padding: 5px 0;
 	font-family: inherit;
 	font-size: 15px;
-	border-bottom: 1px solid #d8dadc
+	border-bottom: 1px solid #d8dadc;
 }
 
 #comments textarea {
@@ -163,11 +182,15 @@ input#author, input#mail, input#url {
 }
 
 #comments input.button, #comments input.submit {
+	border: none;
+	letter-spacing: 2px;
 	line-height: 2em;
 	color: white;
 	padding: 3px 10px;
 	background-color: #575d61;
 	border-radius: 3px;
+	vertical-align: middle;
+	cursor: pointer;
 }
 
 input.button:hover, input.submit:hover {
@@ -183,8 +206,16 @@ input.button:hover, input.submit:hover {
 	}
 }
 
+#comments ol, #comments ul {
+	list-style-type: none;
+}
+
 .comment-parent {
 	border-top: 1px solid #ddd
+}
+
+.comment-list li {
+	margin-top: 10px;
 }
 
 .comment-list p {
@@ -201,8 +232,15 @@ span.comment-author cite, span.comment-author cite a {
 	margin-left: 1.5em
 }
 
-.comment-by-author .fn a {
-	text-shadow: 2px 2px #ddd
+.comment-by-author .fn a::after {
+	background-color: rgba(87, 93, 97, .5);
+	position: relative;
+	left: 4px;
+	content: '作者';
+	display: inline-block;
+	border-radius: 3px;
+	font-size: small;
+	margin-right: 8px;
 }
 
 .respond {
@@ -228,17 +266,23 @@ canvas {
 
 #back-to-top {
 	display: none;
-	border-radius: 5%;
-	text-align: center;
-	line-height: 3em;
-	background-color: #444b50;
 	cursor: pointer;
 	position: fixed;
 	right: 50px;
 	bottom: 10%;
 	z-index: 2;
-	width: 3em;
-	height: 3em;
+	width: 2em;
+	height: 2em;
+}
+
+#back-to-top svg {
+	width: 2em;
+	height: 2em;
+	opacity: .6;
+}
+
+#back-to-top svg:hover {
+	opacity: 1;
 }
 
 .notice {

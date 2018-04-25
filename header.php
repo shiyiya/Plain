@@ -15,12 +15,11 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <meta name="keywords" content="<?php $this->keywords() ?>" />
     <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.css'); ?>">
 	<link rel="icon" href="<?php $this->options->themeUrl('./favicon.ico'); ?>" sizes="32x32"/>
-    <script>
-    console.log("\n %c Godme %c www.runtua.cn \n\n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
-    </script>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -46,6 +45,4 @@
         <?php if($this->options->Notice()):?>
             <div class="notice"><p><?php $this->options->Notice(); ?></p></div>
         <?php endif; ?>
-            
-        
     </header><!-- end #header -->
