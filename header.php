@@ -19,7 +19,7 @@
     <script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.css'); ?>">
-	<link rel="icon" href="<?php $this->options->themeUrl('./favicon.ico'); ?>" sizes="32x32"/>
+    <link rel="icon" href="<?php if($this->options->fav()): $this->options->fav(); else: $this->options->themeUrl('./favicon.ico');endif; ?>"/>
 </head>
 <body>
 <!--[if lt IE 8]>

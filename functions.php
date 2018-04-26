@@ -2,8 +2,10 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
-    $Notice = new Typecho_Widget_Helper_Form_Element_Text('Notice', NULL, NULL, _t('公告'), _t('公告内容'));
-	$form->addInput($Notice);
+    $Notice = new Typecho_Widget_Helper_Form_Element_Text('Notice', NULL, NULL, _t('公告'), _t('公告内容。'));
+    $form->addInput($Notice);
+    $fav = new Typecho_Widget_Helper_Form_Element_Text('fav', NULL, NULL, _t('网站头像'), _t('填入头像地址,不填即为默认。'));
+    $form->addInput($fav);
 }
 
 // 添加浏览数字段到内容
@@ -42,9 +44,6 @@ function viewCounter($archive){
         $views = implode(',', $views);
         Typecho_Cookie::set('__typecho_views', $views); //记录到cookie
     }
-}
-function is_pjax(){
-    return array_key_exists('HTTP_X_PJAX', $_SERVER) && $_SERVER['HTTP_X_PJAX'];
 }
 
 

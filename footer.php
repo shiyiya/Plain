@@ -25,10 +25,10 @@ fetch('https://sslapi.hitokoto.cn/?encode=json')
     //by evanyou ↑↑↑
     (function(){
         var title =  $('#logo').text();
-        var host = location.hostname;
+        var hostname = location.hostname;
         console.log("\n %c Theme %c https://github.com/ShiYiYa/Plain \n\n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
-        console.log("\n %c "+ title + " %c "+ host +" \n\n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
-        $("a:not([href*='"+ host +"'])").attr("target", "_blank");
+        console.log("\n %c "+ title + " %c "+ hostname +" \n\n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
+        $("a:not([href*='"+ hostname +"'])").attr("target", "_blank");
         var pjaxContainer = '#root',
             pjaxTimeout = 30000;
         $(document).pjax('a[target!=_blank]', pjaxContainer, {
@@ -43,7 +43,7 @@ fetch('https://sslapi.hitokoto.cn/?encode=json')
                 }  
             });  
         $("#top, #back-to-top").click(function() {
-            $("html,body").animate({scrollTop:0}, 500);
+            $("html, body, .scroll").animate({scrollTop:0}, 500);
         }); 
     })();
 </script>

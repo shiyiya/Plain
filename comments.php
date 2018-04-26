@@ -8,7 +8,6 @@
             $commentClass .= ' comment-by-user';
         }
     }
- 
     $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
 ?>
  
@@ -40,18 +39,13 @@ echo $commentClass;
 </li>
 <?php } ?>
 
-
 <div id="comments">
     <?php $this->comments()->to($comments); ?>
     <?php if ($comments->have()): ?>
 	<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
-    
     <?php $comments->listComments(); ?>
-
     <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
-    
     <?php endif; ?>
-
     <?php if($this->allow('comment')): ?>
     <div id="<?php $this->respondId(); ?>" class="respond">
         <div class="cancel-comment-reply">
@@ -60,7 +54,6 @@ echo $commentClass;
     	<form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
     		<div class="center">
             <?php if($this->user->hasLogin()): ?>
-            
     		<p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
             <?php else: ?>
     		<p>
@@ -70,7 +63,7 @@ echo $commentClass;
             </p>
             <?php endif; ?>
             <p>
-            <textarea placeholder="Write here···" rows="8" cols="50" name="text" id="textarea" class="textarea" required ><?php $this->remember('text'); ?></textarea>
+                <textarea placeholder="Write here···" rows="8" cols="50" name="text" id="textarea" class="textarea" required ><?php $this->remember('text'); ?></textarea>
             </p>
             <p>
                 <input type="submit" id="submit" class="submit" value="提交"/>
