@@ -85,6 +85,9 @@ ul {
 header a {
 	color: #0e1a26
 }
+.post-content {
+	margin: 2em 0;
+}
 
 .post-content a {
 	border-bottom: 1px solid #747677

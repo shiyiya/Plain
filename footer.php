@@ -48,9 +48,7 @@ fetch('https://sslapi.hitokoto.cn/?encode=json')
         });
     })();
 </script>
- <!--  -->
 <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
-<script>console.log('↑ ??????')</script>
 </body>
 <script>
     console.log("\n %c Theme %c https://github.com/ShiYiYa/Plain \n\n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
