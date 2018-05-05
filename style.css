@@ -192,7 +192,7 @@ nav a {
 }
 
 #comments textarea {
-	/* background: transparent url(./images/commentsbg.gif) right center no-repeat !important; */
+	background: transparent url(./images/commentsbg.gif) right center no-repeat !important;
 	overflow: auto;
 	height: 5em;
 	width: 100%;

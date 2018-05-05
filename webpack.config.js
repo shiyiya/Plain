@@ -7,12 +7,12 @@ module.exports = {
     app: path.resolve(__dirname, 'index.js')
   },
   output: {
-    path: path.resolve(__dirname, './dist/'),
-    filename: './js/[name].[hash:8].js',
+    path: path.resolve(__dirname, './'),
+    filename: './js/[name].js',
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./css/style.css",
+      filename: "./style.min.css",
     })
   ],
   module: {
@@ -23,7 +23,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: '../'
+              publicPath: './'
             }
           },
           {
@@ -34,6 +34,19 @@ module.exports = {
             }
           },
           { loader: 'postcss-loader' },
+        ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: '1024',
+              name: '[name].[ext]',
+              outputPath: './images/',
+            }
+          }
         ]
       }
     ]
