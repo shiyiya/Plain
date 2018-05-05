@@ -2,10 +2,14 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
-    $Notice = new Typecho_Widget_Helper_Form_Element_Text('Notice', NULL, NULL, _t('公告'), _t('公告内容。'));
-    $form->addInput($Notice);
-    $fav = new Typecho_Widget_Helper_Form_Element_Text('fav', NULL, NULL, _t('网站头像'), _t('填入头像地址,不填即为默认。'));
+    $fav = new Typecho_Widget_Helper_Form_Element_Text('fav', NULL, NULL, _t('站点LOGO'), _t('在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO,不填即为默认。'));
     $form->addInput($fav);
+    $GitHubLink = new Typecho_Widget_Helper_Form_Element_Text('GitHubLink', NULL, NULL, _t('GitHub'), _t('请填入完整链接。'));
+    $form->addInput($GitHubLink);
+    $rssLink = new Typecho_Widget_Helper_Form_Element_Text('rssLink', NULL, NULL, _t('rss'), _t('请填入完整链接。'));
+    $form->addInput($rssLink);
+    $twitterLink = new Typecho_Widget_Helper_Form_Element_Text('twitterLink', NULL, NULL, _t('twitter'), _t('请填入完整链接。'));
+    $form->addInput($twitterLink);
 }
 
 // 添加浏览数字段到内容

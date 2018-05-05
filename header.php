@@ -35,14 +35,22 @@
              <h1><a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
             	<p class="description"><?php $this->options->description() ?></p>
         <?php endif; ?>
-        <nav id="nav-menu" class="clearfix" role="navigation">
+        <nav id="nav-menu" role="navigation">
             <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('Home'); ?></a>
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
             <?php while($pages->next()): ?>
             <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
         <?php endwhile; ?>
         </nav>
-        <?php if($this->options->Notice()):?>
-            <div class="notice"><p><?php $this->options->Notice(); ?></p></div>
-        <?php endif; ?>
+        <div class="link">
+            <?php if ($this->options->twitterLink): ?>
+                <a target="_blank" href="<?php $this->options->twitterLink(); ?>"><img src="<?php $this->options->themeUrl('./images/twitter.png'); ?>"></a>
+            <?php endif; ?>
+            <?php if ($this->options->GitHubLink): ?>
+                <a target="_blank" href="<?php $this->options->GitHubLink(); ?>"><img src="<?php $this->options->themeUrl('./images/github.png'); ?>"></a>
+            <?php endif; ?>
+            <?php if ($this->options->rssLink): ?>
+                <a target="_blank" href="<?php $this->options->rssLink(); ?>"><img src="<?php $this->options->themeUrl('./images/rss.png'); ?>"></a>
+            <?php endif; ?>
+        </div>
     </header><!-- end #header -->
