@@ -5,7 +5,7 @@
  * @package Plain
  * @author  ShiYi
  * 
- * @version last
+ * @version v1.2
  * @link https://www.runtua.cn
  */
 
