@@ -68,6 +68,12 @@ ul {
 	padding: 0
 }
 
+@media screen and (max-width: 768px) {
+	.link{
+		display: none
+	}
+}
+
 #header .link {
 	position: absolute;
 	bottom: 0;

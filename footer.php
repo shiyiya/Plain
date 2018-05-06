@@ -43,14 +43,15 @@ fetch('https://sslapi.hitokoto.cn/?encode=json')
         $("#top, #back-to-top").click(function() {
             $("html, body").animate({scrollTop:0}, 500);
         });
-        $(document).on('pjax:complete', function() {
-           Prism.highlightAll(); 
-        });
+        
     })();
 </script>
 <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 </body>
 <script>
+    $(document).on('pjax:end', function() {
+        Prism.highlightAll(); 
+    });
     console.log("\n %c Theme %c https://github.com/ShiYiYa/Plain \n\n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
     console.log("\n %c "+ $('#logo').text() + " %c "+ location.hostname +" \n\n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
 </script>
