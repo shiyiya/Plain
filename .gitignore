@@ -1,4 +1,4 @@
+# dependencies
 /node_modules
-
-/style.css
 /js
+style.css*
