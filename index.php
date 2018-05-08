@@ -12,6 +12,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
  ?>
+ <div id="main" role="main">
  <div class="content">
 	 <article class="post">
 	 <ul>
@@ -27,6 +28,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	</ul>
 	</article>
 	<?php $this->pageNav('&laquo; 上一页', '下一页 &raquo;'); ?>
+</div>
 </div>
 <?php $this->need('footer.php'); ?>
 
