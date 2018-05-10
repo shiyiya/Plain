@@ -1,4 +1,9 @@
 # dependencies
 /node_modules
 /js
-style.css*
+style.css
+webpack.config.js
+postcss.config.js
+index.js
+yarn.lock
+package.json
