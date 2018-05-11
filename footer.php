@@ -52,6 +52,6 @@ fetch('https://sslapi.hitokoto.cn/?encode=json')
     })();
 	//版权信息，勿删。↓↓↓↓
     console.info(" %c Theme %c https://github.com/ShiYiYa/Plain", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3;padding:5px 5px 5px 0;");
-    console.info(" %c "+ $('#logo').text() + " %c "+ location.hostname , "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3;padding:5px 5px 5px 0;");
+    console.info(" %c "+ $('#logo').text() + " %c "+ location.origin , "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3;padding:5px 5px 5px 0;");
 </script>
 </html>

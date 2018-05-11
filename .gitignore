@@ -7,3 +7,4 @@ postcss.config.js
 index.js
 yarn.lock
 package.json
+yarn-error.log
