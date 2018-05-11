@@ -2,27 +2,21 @@
 ![view](./screenshot.png)
 ## Theme for Typecho.
 ## 极简主题，专注于创作。
-### 请勿删除主题版权信息。
+## 请勿删除主题版权信息。
 
 ### 使用方法
-1. 下载
-```shell
-$ git clone https://github.com/shiyiya/Plain.git
-```
-如果未安装 ```git```，[点击此处下载主题](https://github.com/shiyiya/Plain/archive/master.zip)  
+1. Clone or download.
 2. 上传本主题，并放置在 usr/themes/ 目录下
 3. 在 Typecho 后台，主题设置应用即可 ~
 
 ### 创建归档
 
 1. 创建独立页面。
-2. 选择自定义模板 ```recent```，标题为 ```归档```。
+2. 选择自定义模板 ```recent```，标题为 ```归档```。  
 3. 发布。
 
 ### 网站头像
 
-- 直接替换目录的 favicon.ico 。  
-  或者
 - 主题设置填入logo链接。
 
 ### 个人链接
