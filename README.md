@@ -2,6 +2,7 @@
 ![view](./screenshot.png)
 ## Theme for Typecho.
 ## 极简主题，专注于创作。
+### 请勿删除主题版权信息。
 
 ### 使用方法
 1. 下载
