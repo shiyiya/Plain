@@ -12,7 +12,8 @@ function themeConfig($form) {
     $form->addInput($twitterLink);
 	
 	$effect = new Typecho_Widget_Helper_Form_Element_Checkbox('effect', 
-    array('hitokoto' => _t('一言'),
+    array('fixbug' => _t('必选，最懒解决bug法，偷懒真爽(oﾟvﾟ)ノ'),
+	'hitokoto' => _t('一言'),
     'prism' => _t('代码高亮')),
     array('hitokoto', 'prism'), _t('额外功能'));
     

@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<?php if(in_array('hitokoto', $this->options->effect)): ?>
+<?php if( $this->options->effect && in_array('hitokoto', $this->options->effect)): ?>
 <div id="hitokoto" class="center"><p>Everyone is their own God.</p></div>
 <script>
 fetch('https://sslapi.hitokoto.cn/?encode=json')

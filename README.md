@@ -1,7 +1,7 @@
 ## Theme for Typecho.
 ### 极简主题，专注于创作。
 ## 请勿删除主题版权信息，可 Star，勿 Fork。
-## 原作者 https://ikirby.me/（未公开主题）
+## 原作者 [ikirby](https://ikirby.me/)（未公开主题）
 
 ### 使用方法
 1. Clone or download.
