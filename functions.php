@@ -10,6 +10,23 @@ function themeConfig($form) {
     $form->addInput($rssLink);
     $twitterLink = new Typecho_Widget_Helper_Form_Element_Text('twitterLink', NULL, NULL, _t('twitter'), _t('请填入完整链接。'));
     $form->addInput($twitterLink);
+	
+	$effect = new Typecho_Widget_Helper_Form_Element_Checkbox('effect', 
+    array('hitokoto' => _t('一言'),
+    'prism' => _t('代码高亮')),
+    array('hitokoto', 'prism'), _t('额外功能'));
+    
+    $form->addInput($effect->multiMode());
+}
+
+function active_current_menu($archive,$expected,$active_class='active'){
+    if($expected == 'index' && $archive.is('index')){
+        echo $active_class;
+    }else if($archive.is('archive') && $archive.getArchiveSlug() == $expected){
+        echo $active_class;
+    }else{
+        echo '';
+    }
 }
 
 // 添加浏览数字段到内容

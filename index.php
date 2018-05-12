@@ -3,9 +3,10 @@
  * 极简主题，专注创作。
  * 
  * @package Plain
- * @author  ShiYi
+ * @author  ikirby,ShiYi
  * 
  * @version v1.0
+ * @link https://ikirby.me/
  * @link https://www.runtua.cn
  */
 
