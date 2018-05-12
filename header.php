@@ -18,7 +18,7 @@
 	<link rel="icon" href="<?php if($this->options->fav()): $this->options->fav(); else: $this->options->themeUrl('./favicon.ico');endif; ?>"/>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>">
 	<?php if(in_array('prism', $this->options->effect)): ?>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.min.css'); ?>">
 	<?php endif; ?>
 	<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
