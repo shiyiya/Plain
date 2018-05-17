@@ -1,0 +1,26 @@
+{
+  "name": "godme",
+  "short_name": "godme",
+  "scope": "/",
+  "start_url": "/?from=pwa",
+  "display": "standalone",
+  "description": "Everyone is their own God.",
+  "dir": "rtl",
+  "lang": "cn",
+  "orientation": "portrait",
+  "theme_color": "#a4a9ad",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "prefer_related_applications": false
+}

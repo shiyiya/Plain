@@ -4,7 +4,17 @@
 style.css
 webpack.config.js
 postcss.config.js
+
+# webpack min
 index.js
+
+# service workers
+app.js
+sw.js
+sw.bak.js
+/lib/sw-toolbox.js
+
+
 yarn.lock
 package.json
 yarn-error.log
