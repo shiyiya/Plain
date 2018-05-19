@@ -1,20 +1,10 @@
 # dependencies
 /node_modules
-/js
-style.css
+/lib
 webpack.config.js
 postcss.config.js
-
-# webpack min
+style.css
 index.js
-
-# service workers
-app.js
-sw.js
-sw.bak.js
-/lib/sw-toolbox.js
-
-
 yarn.lock
 package.json
 yarn-error.log

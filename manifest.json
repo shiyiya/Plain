@@ -17,7 +17,7 @@
       "type": "image/webp"
     },
     {
-      "src": "/images/icons-512.png",
+      "src": "favicon.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
