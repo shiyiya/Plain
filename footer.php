@@ -23,20 +23,19 @@ fetch('https://sslapi.hitokoto.cn/?encode=json')
 <?php $this->footer(); ?>
 <canvas></canvas>
 <div class="imageView">
-    
     <img src="https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike272%2C5%2C5%2C272%2C90/sign=54fb3c45c495d143ce7bec711299e967/4b90f603738da9772f4e566dbc51f8198618e317.jpg" alt="preView">
 </div>
 </body>
-
+<script src="<?php $this->options->themeUrl('js/index.js');?>"></script>
 <?php if(in_array('prism', $this->options->effect)): ?>
 <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 <script>
 $(document).on('pjax:end', function() {
 	if(Prism){
 		Prism.highlightAll(); 
-	}
+    }
+    imageView()
 });
 </script>
 <?php endif; ?>
-<script src="<?php $this->options->themeUrl('js/app.min.js');?>"></script>
 </html>
