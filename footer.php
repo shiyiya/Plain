@@ -27,7 +27,7 @@ fetch('https://sslapi.hitokoto.cn/?encode=json')
     <img src="https://runtua.cn/usr/themes/plain/images/preView.png" alt="preView">
 </div>
 </body>
-<script src="<?php $this->options->themeUrl('js/index.js');?>"></script>
+<script src="<?php $this->options->themeUrl('js/index.min.js');?>"></script>
 <?php if(in_array('prism', $this->options->effect)): ?>
 <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 <script>

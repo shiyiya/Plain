@@ -2,10 +2,10 @@
 /node_modules
 /lib
 /images/preView.png
-webpack.config.js
-postcss.config.js
+
+gulpfile.js
 style.css
 index.js
+
 yarn.lock
-package.json
 yarn-error.log
