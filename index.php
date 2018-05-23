@@ -3,11 +3,11 @@
  * 极简主题，专注创作。
  * 
  * @package Plain
- * @author  ikirby,ShiYi
+ * @author  ShiYi,ikirby
  * 
- * @version v1.0
- * @link https://ikirby.me/
+ * @version 1.0
  * @link https://www.runtua.cn
+ * @UIlink https://ikirby.me/
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

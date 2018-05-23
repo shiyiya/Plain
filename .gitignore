@@ -1,6 +1,7 @@
 # dependencies
 /node_modules
 /lib
+/images/preView.png
 webpack.config.js
 postcss.config.js
 style.css
