@@ -3,7 +3,6 @@
 
 <div id="main" role="main">
     <article class="post">
-        <h1 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
         <ul class="post-meta">
             <li><?php _e(''); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
             <li><?php _e(' • '); ?><?php $this->category('&'); ?></li>
@@ -23,6 +22,5 @@
         <li class="clearfix"></li>
     </ul>
     <?php $this->need('comments.php'); ?>
-</div><!-- end #main-->
-
+</div>
 <?php $this->need('footer.php'); ?>

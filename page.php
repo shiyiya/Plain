@@ -9,6 +9,6 @@
         </div>
     </article>
     <?php $this->need('comments.php'); ?>
-</div><!-- end #main-->
+</div>
 
 <?php $this->need('footer.php'); ?>

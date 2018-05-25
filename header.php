@@ -1,6 +1,6 @@
 ﻿<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <!DOCTYPE HTML>
-<html lang="en" class="scroll">
+<html lang="en">
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,25 +25,21 @@
     <script src="https://cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
 </head>
 <body>
-<!--[if lt IE 8]>
-    <div class="browsehappy center"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
-<![endif]-->
 <div id="root">
     <header id="header">
-        <?php if ($this->options->logoUrl): ?>
-            <a id="logo" href="<?php $this->options->siteUrl(); ?>">
-               <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
-               </a>
-        <?php else: ?>
-             <h1><a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
-            	<p class="description"><?php $this->options->description() ?></p>
-        <?php endif; ?>
+    <?php if($this->is('post')) :?>
+        <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a><?php _e(' /'); ?>
+        <h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+    <?php else:?>
+        <h1><a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
+        <p class="description"><?php $this->options->description() ?></p>
         <nav id="nav-menu" role="navigation">
             <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('Home'); ?></a>
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
             <?php while($pages->next()): ?>
             <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
         <?php endwhile; ?>
+    <?php endif; ?>
         </nav>
         <div class="link">
             <?php if ($this->options->twitterLink): ?>
@@ -56,4 +52,4 @@
                 <a target="_blank" href="<?php $this->options->rssLink(); ?>"><img src="<?php $this->options->themeUrl('./images/rss.png'); ?>"></a>
             <?php endif; ?>
         </div>
-    </header><!-- end #header -->
+    </header>
