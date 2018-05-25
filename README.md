@@ -4,6 +4,10 @@
 ## UI [ikirby](https://ikirby.me/)
 ![preView](https://raw.githubusercontent.com/shiyiya/Plain/master/screenshot.png)
 
+### 已知问题
+
+- pjax 导致 head 部分 meta 未替换 ？？？？？
+
 ### 使用方法
 1. Clone or download.
 2. 上传本主题，并放置在 usr/themes/ 目录下

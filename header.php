@@ -2,11 +2,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="<?php $this->options->charset(); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="<?php $this->options->charset(); ?>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />>
 	<meta http-equiv="Cache-Control" content="no-transform " /> 
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />>
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -16,16 +16,17 @@
     <meta name="keywords" content="<?php $this->keywords() ?>" />
     <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
 	<link rel="icon" href="<?php if($this->options->fav()): $this->options->fav(); else: $this->options->themeUrl('./favicon.ico');endif; ?>"/>
-    <link rel="manifest" href="<?php $this->options->themeUrl('manifest.json'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style/style.min.css'); ?>">
+    <link rel="manifest" href="<?php $this->options->themeUrl('manifest.json'); ?>" />
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('style/style.min.css'); ?>" />
 	<?php if(in_array('prism', $this->options->effect)): ?>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.min.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.min.css'); ?>" />
 	<?php endif; ?>
 	<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
 </head>
 <body>
 <div id="root">
+    <div id='pjax'>
     <header id="header">
     <?php if($this->is('post')) :?>
         <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a><?php _e(' /'); ?>
