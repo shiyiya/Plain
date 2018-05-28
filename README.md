@@ -1,17 +1,19 @@
 ## Theme for Typecho.
 ### 极简主题，专注于创作。
-## 请勿删除主题版权信息，可 Star，勿 Fork。
+## 请勿删除主题版权信息，可 Star，勿 Fork！！
 ## UI [ikirby](https://ikirby.me/)
+## 更新比较频繁，建议 Watch。
 ![preView](https://raw.githubusercontent.com/shiyiya/Plain/master/screenshot.png)
 
 ### 已知问题
 
-- pjax 导致 head 部分 meta 未替换 ？？？？？
+- pjax 导致 head 部分 meta 未替换 (description)
 
 ### 使用方法
 1. Clone or download.
-2. 上传本主题，并放置在 usr/themes/ 目录下
+2. 上传本主题，并放置在 usr/themes/ 目录下。
 3. 在 Typecho 后台，主题设置应用即可 ~
+4. 主题设置勾选必选项并填入相关信息。/滑稽。
 
 ### 创建归档
 
@@ -21,7 +23,7 @@
 
 ### 网站头像
 
-- 主题设置填入logo链接。
+- 主题设置填入 logo 链接。
 
 ### 个人链接
 

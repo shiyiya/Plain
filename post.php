@@ -3,11 +3,11 @@
 
 <div id="main" role="main">
     <article class="post">
-        <ul class="post-meta">
+        <ul class="post-meta center">
             <li><?php _e(''); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
-            <li><?php _e(' • '); ?><?php $this->category('&'); ?></li>
-            <li><?php _e(' • PV：'); ?><?php if(isset($this->fields->viewsNum)){ $this->fields->viewsNum(); } ?></li>
-            <li><?php _e(' • Edited：'); ?><time datetime="<?php $this->date('c'); ?>"><?php echo date('Y-m-d  H:i:s' , $this->modified); ?></time></li>
+           <!--  <li><?php _e(' • '); ?><?php $this->category('&'); ?></li> -->
+            <li><?php _e(' • PV -'); ?><?php if(isset($this->fields->viewsNum)){ $this->fields->viewsNum(); } ?></li>
+            <li><?php _e(' • Edited：'); ?><time datetime="<?php $this->date('c'); ?>"><?php echo date('Y-m-d' , $this->modified); ?></time></li>
         </ul>
         <div class="post-content">
             <?php  $this->content(); ?>

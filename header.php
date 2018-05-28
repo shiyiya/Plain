@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="<?php $this->options->charset(); ?>" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta http-equiv="Cache-Control" content="no-transform " /> 
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -30,7 +30,7 @@
     <header id="header">
     <?php if($this->is('post')) :?>
         <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a><?php _e(' /'); ?>
-        <h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+        <h2 class="post-title"><?php $this->title() ?></h2>
     <?php else:?>
         <h1><a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
         <p class="description"><?php $this->options->description() ?></p>
