@@ -3,7 +3,7 @@
 
 <div id="main" role="main">
     <article class="post">
-        <ul class="post-meta center">
+        <ul class="post-meta">
             <li><?php _e(''); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
            <!--  <li><?php _e(' • '); ?><?php $this->category('&'); ?></li> -->
             <li><?php _e(' • PV -'); ?><?php if(isset($this->fields->viewsNum)){ $this->fields->viewsNum(); } ?></li>
@@ -19,7 +19,6 @@
     <ul class="post-near">
         <li class="left">« <?php $this->thePrev('%s','没有了'); ?></li>
         <li class="right"><?php $this->theNext('%s','没有了'); ?> »</li>
-        <li class="clearfix"></li>
     </ul>
     <?php $this->need('comments.php'); ?>
 </div>
