@@ -3,7 +3,11 @@
 
 <div id="main" role="main">
     <article class="post">
-        <h1 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
+        <h1 class="post-title">
+            <a href="<?php $this->permalink() ?>">
+                <?php $this->title() ?>
+            </a>
+        </h1>
         <div class="post-content">
             <?php $this->content(); ?>
         </div>
