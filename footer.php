@@ -26,9 +26,7 @@
     <p>除非特别注明，本站内容采用<?php _e('<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>'); ?>进行许可。</p>
 </footer>
 <?php $this->footer(); ?>
-    <canvas></canvas>
-    
-
+<canvas></canvas>
 <div class="imageView">
     <img src="" alt="preView">
 </div>
@@ -56,18 +54,6 @@
 </script>
 <?php if(in_array('Prism', $this->options->effect)): ?>
 <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
-<script>
-    $(document).on('pjax:end', function () {
-        if (Prism) {
-            Prism.highlightAll();
-        }
-        if (!isMobile()) {
-            imageView()
-        } else {
-            console.log('You are Phone.');
-        };
-    });
-</script>
 <?php endif; ?>
 
 </html>
