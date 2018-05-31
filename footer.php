@@ -3,7 +3,7 @@
 </div><!-- pjax end -->
 <footer id="footer" role="contentinfo">
     <p class="center" id="live-time"></p>
-    <?php if( $this->options->effect && in_array('hitokoto', $this->options->effect)): ?>
+    <?php if( $this->options->effect && in_array('Hitokoto', $this->options->effect)): ?>
     <div id="hitokoto" class="center">
         <p>Everyone is their own God.</p>
     </div>
@@ -26,7 +26,9 @@
     <p>除非特别注明，本站内容采用<?php _e('<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>'); ?>进行许可。</p>
 </footer>
 <?php $this->footer(); ?>
-<canvas></canvas>
+    <canvas></canvas>
+    
+
 <div class="imageView">
     <img src="" alt="preView">
 </div>
@@ -43,7 +45,16 @@
 </div>
 </body>
 <script src="<?php $this->options->themeUrl('js/index.min.js');?>"></script>
-<?php if(in_array('prism', $this->options->effect)): ?>
+<?php if(in_array('Ribbons', $this->options->effect)): ?>
+<script>
+    if(!isMobile()){
+        document.onclick = i;
+        document.ontouchstart = i;
+        i();
+    }
+<?php endif; ?>
+</script>
+<?php if(in_array('Prism', $this->options->effect)): ?>
 <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 <script>
     $(document).on('pjax:end', function () {

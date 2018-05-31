@@ -13,9 +13,10 @@ function themeConfig($form) {
 	
 	$effect = new Typecho_Widget_Helper_Form_Element_Checkbox('effect', 
     array('fixbug' => _t('必选，最懒解决bug法，偷懒真爽(oﾟvﾟ)ノ'),
-	'hitokoto' => _t('一言'),
-    'prism' => _t('代码高亮')),
-    array('hitokoto', 'prism'), _t('额外功能'));
+	'Hitokoto' => _t('一言'),
+    'Prism' => _t('代码高亮'),
+    'Ribbons' => _t('彩带')),
+    array('Hitokoto', 'Prism', 'Ribbons'), _t('额外功能'));
     
     $form->addInput($effect->multiMode());
 }
