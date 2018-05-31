@@ -1,9 +1,17 @@
-## Theme for Typecho.
-### 极简主题，专注于创作。
-## 请勿删除主题版权信息，可 Star，勿 Fork！！
-## UI [ikirby](https://ikirby.me/)
-## 更新比较频繁，建议 Watch。
+## Theme for Typecho. 
+![](https://img.shields.io/badge/Theme-%40Typecho-brightgreen.svg)
+[![Author](https://img.shields.io/badge/Author-me-brightgreen.svg)](https:\//runtua.cn.com)
+![apm](https://img.shields.io/apm/l/vim-mode.svg)  
+
+极简主题，专注于创作。  
+
 ![preView](https://raw.githubusercontent.com/shiyiya/Plain/master/screenshot.png)
+
+
+ - **请勿删除主题版权信息，可 Star，勿 Fork！！**
+ - UI **[ikirby](https://ikirby.me/)**
+ - 更新比较频繁，建议 **Watch**。
+
 
 ### 已知问题
 
@@ -42,7 +50,8 @@
 
 ### effect
 
-- 后台设置是否启用```一言```，```代码高亮```。
+- 后台设置是否启用```一言```，```代码高亮```，```彩带```。
+  - 彩带手机默认不显示。
 
 ### 创建归档
 ~~我觉得不需要这东西~~
