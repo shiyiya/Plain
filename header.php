@@ -5,8 +5,8 @@
     <meta charset="<?php $this->options->charset(); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta http-equiv="Cache-Control" content="no-transform " /> 
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -44,13 +44,13 @@
         </nav>
         <div class="link">
             <?php if ($this->options->twitterLink): ?>
-                <a target="_blank" href="<?php $this->options->twitterLink(); ?>"><img src="<?php $this->options->themeUrl('./images/twitter.png'); ?>"></a>
+                <a target="_blank" href="<?php $this->options->twitterLink(); ?>"><img alt="twitter-ico" src="<?php $this->options->themeUrl('./images/twitter.png'); ?>"></a>
             <?php endif; ?>
             <?php if ($this->options->GitHubLink): ?>
-                <a target="_blank" href="<?php $this->options->GitHubLink(); ?>"><img src="<?php $this->options->themeUrl('./images/github.png'); ?>"></a>
+                <a target="_blank" href="<?php $this->options->GitHubLink(); ?>"><img alt="GitHub-ico" src="<?php $this->options->themeUrl('./images/github.png'); ?>"></a>
             <?php endif; ?>
             <?php if ($this->options->rssLink): ?>
-                <a target="_blank" href="<?php $this->options->rssLink(); ?>"><img src="<?php $this->options->themeUrl('./images/rss.png'); ?>"></a>
+                <a target="_blank" href="<?php $this->options->rssLink(); ?>"><img alt="rss-ico" src="<?php $this->options->themeUrl('./images/rss.png'); ?>"></a>
             <?php endif; ?>
         </div>
     </header>
