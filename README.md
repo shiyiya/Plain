@@ -15,7 +15,6 @@
 
 ### 已知问题
 
-- pjax 导致 head 部分 meta 未替换 (description)
 - 部分无法显示文章页 PV（浏览量），尝试删除 function.php 内统计代码重新进去 /滑稽。
 
 ### 使用方法

@@ -4,7 +4,8 @@
 <head>
     <meta charset="<?php $this->options->charset(); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta http-equiv="Cache-Control" content="no-transform " /> 
+	<meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> 
     <meta name="renderer" content="webkit" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
     <title><?php $this->archiveTitle(array(
@@ -15,11 +16,16 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <meta name="keywords" content="<?php $this->keywords() ?>" />
     <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<?php $this->title() ?>" />
+    <meta property="og:url" content="<?php $this->permalink() ?>" />
+    <meta property="og:site_name" content="<?php $this->options->title() ?>" />
+    <meta property="og:description" content=" <?php $this->description() ?>" />
 	<link rel="icon" href="<?php if($this->options->fav()): $this->options->fav(); else: $this->options->themeUrl('./favicon.ico');endif; ?>"/>
     <link rel="manifest" href="<?php $this->options->themeUrl('manifest.json'); ?>" />
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style/style.min.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/style.min.css'); ?>" />
 	<?php if(in_array('Prism', $this->options->effect)): ?>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism/prism.min.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('prism/prism.min.css'); ?>" />
 	<?php endif; ?>
 	<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>

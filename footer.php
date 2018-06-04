@@ -21,9 +21,9 @@
     <a href="<?php $this->options->siteUrl(); ?>">
         <?php $this->options->title(); ?>
     </a> -
-    <?php _e('Using <a href="http://www.typecho.org">Typecho</a> &'); ?>
-    <?php _e('<a href="https://github.com/ShiYiYa/Plain">Theme</a> by <a href="https://runtua.cn">Godme</a>'); ?>
-    <p>除非特别注明，本站内容采用<?php _e('<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>'); ?>进行许可。</p>
+    <?php _e('Using <a href="http://www.typecho.org" rel="external nofollow">Typecho</a> &'); ?>
+    <?php _e('<a href="https://github.com/ShiYiYa/Plain" rel="external nofollow">Theme</a> by <a href="https://runtua.cn">Godme</a>'); ?>
+    <p>除非特别注明，本站内容采用<?php _e('<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>'); ?>进行许可。</p>
 </footer>
 <?php $this->footer(); ?>
 <canvas></canvas>
