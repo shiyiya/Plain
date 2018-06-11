@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta http-equiv="Cache-Control" content="no-transform " />
     <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+    <meta name="Baiduspider" content="noarchive">
     <meta name="renderer" content="webkit" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
     <title><?php $this->archiveTitle(array(
