@@ -5,7 +5,7 @@
  * @package Plain
  * @author  ShiYi,ikirby
  * 
- * @version 1.0
+ * @version 1.0.1
  * @link https://www.runtua.cn
  * @UIlink https://ikirby.me/
  */
@@ -16,7 +16,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  <div id="main" role="main">
  <div class="content">
 	 <article class="post">
-	 <ul>
+	 <ul class="post-list">
 	<?php while($this->next()): ?>
 			<li class="post-item">
 				<a href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
