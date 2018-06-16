@@ -1,5 +1,6 @@
 ## Theme for Typecho.
 
+![preView](https://raw.githubusercontent.com/shiyiya/Plain/master/screenshot.png)
 ![](https://img.shields.io/badge/Theme-%40Typecho-brightgreen.svg)
 [![Author](https://img.shields.io/badge/Author-me-brightgreen.svg)](https://runtua.cn.com)
 ![Theme version](https://img.shields.io/badge/version-1.0.1-green.svg)
@@ -7,10 +8,11 @@
 
 极简主题，专注于创作。
 
-![preView](https://raw.githubusercontent.com/shiyiya/Plain/master/screenshot.png)
+ui from **[ikirby](https://ikirby.me/)**
 
-- **请勿删除主题版权信息，可 Star，勿 Fork！！**
-- UI **[ikirby](https://ikirby.me/)**
+### Change log
+
+- waiting `Issue`
 
 ### 已知问题
 
@@ -57,14 +59,5 @@
 ~~我觉得不需要这东西~~
 
 1.  创建独立页面。
-2.  选择自定义模板 `Recent`，标题为 `Recent/归档`。
+2.  选择自定义模板 `Recent`，标题为 `Recent / 归档`。
 3.  发布。
-
-### 欢迎提 issue 。
-
-如果你有什么建议可以告诉我。
-
-### 开源协议
-
-本项目采用 MIT 开源协议进行授权。  
-开源不易且行且珍惜。
