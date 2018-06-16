@@ -2,7 +2,8 @@
 
 ![](https://img.shields.io/badge/Theme-%40Typecho-brightgreen.svg)
 [![Author](https://img.shields.io/badge/Author-me-brightgreen.svg)](https://runtua.cn.com)
-![apm](https://img.shields.io/apm/l/vim-mode.svg)
+![Theme version](https://img.shields.io/badge/version-1.0.1-green.svg)
+![npm](https://img.shields.io/npm/l/express.svg)
 
 极简主题，专注于创作。
 
