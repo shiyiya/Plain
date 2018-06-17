@@ -1,11 +1,15 @@
-# dependencies
-/node_modules
-/lib
-/images/preView.png
 
+# devDependencies
+/node_modules
 gulpfile.js
+
+# dependencies
+/lib
 style.css
 index.js
+
+# author
+author.png
 
 yarn.lock
 yarn-error.log

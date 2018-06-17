@@ -16,22 +16,23 @@ ui from **[ikirby](https://ikirby.me/)**
 
 ### 已知问题
 
-- 部分无法显示文章页 PV（浏览量），尝试删除 function.php 内统计代码重新进去 /滑稽。
+- 部分无法显示文章页 `PV`（浏览量），尝试删除 `function.php` 内统计代码重新进去 /滑稽。
 
 ### 使用方法
 
-1.  Clone or download.
-2.  上传本主题，并放置在 usr/themes/ 目录下。
-3.  在 Typecho 后台，主题设置应用即可 ~
+1.  Clone or download [ZIP](https://github.com/shiyiya/Plain/archive/1.0.1.zip) / [TAR](https://github.com/shiyiya/Plain/archive/1.0.1.tar.gz).
+2.  上传本主题，并放置在 `usr/themes/` 目录下。
+3.  在 `Typecho` 后台，主题设置应用即可 ~
 4.  主题设置勾选必选项并填入相关信息。/滑稽。
 
 ### 网站 ico 图标
 
-- 主题设置填入 ico 链接地址。( ico 格式)
+- 主题设置填入 `ico` 链接地址。( ico 格式)  
+  或者上传到主题目录，`favicon.ico` 。
 
 ### 个人链接
 
-- 主题设置内填入完整链接地址。
+- 主题设置内填入`完整链接地址`。
 
 ### 友链示例
 
