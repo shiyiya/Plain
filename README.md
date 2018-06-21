@@ -20,7 +20,7 @@ ui from **[ikirby](https://ikirby.me/)**
 
 ### 使用方法
 
-1.  Clone or download [ZIP](https://github.com/shiyiya/Plain/archive/1.0.1.zip) / [TAR](https://github.com/shiyiya/Plain/archive/1.0.1.tar.gz).
+1.  Clone or download [ZIP](https://github.com/shiyiya/Plain/archive/v1.0.2.zip) / [TAR](https://github.com/shiyiya/Plain/archive/v1.0.2.tar.gz).
 2.  上传本主题，并放置在 `usr/themes/` 目录下。
 3.  在 `Typecho` 后台，主题设置应用即可 ~
 4.  主题设置勾选必选项并填入相关信息。/滑稽。
