@@ -2,7 +2,9 @@
 
 </div><!-- pjax end -->
 <footer id="footer" role="contentinfo">
-    <p class="center" id="live-time"></p>
+    <p class="center" id="live-time"> 
+       <?php $this->options->liveTime(); ?>
+    </p>
     <?php if( $this->options->effect && in_array('Hitokoto', $this->options->effect)): ?>
     <div id="hitokoto" class="center">
         <p>Everyone is their own God.</p>
