@@ -12,29 +12,32 @@ ui from **[ikirby](https://ikirby.me/)**
 
 ### Change log
 
-- waiting `Issue`
+- 2018-6-23
+  - 优化文章名字过长的问题.
+  - 评论细节调整.
 
-### 已知问题
+## 注意事项
 
-- 部分无法显示文章页 `PV`（浏览量），尝试删除 `function.php` 内统计代码重新进去 /滑稽。
+- `typecho` 自定义字段不支持 `php7+`，所以浏览量无法生效。
+- **需要关闭反垃圾保护**，不然会导致无法评论。
 
-### 使用方法
+## 使用方法
 
-1.  Clone or download [ZIP](https://github.com/shiyiya/Plain/archive/v1.0.2.zip) / [TAR](https://github.com/shiyiya/Plain/archive/v1.0.2.tar.gz).
+1.  Clone or download .
 2.  上传本主题，并放置在 `usr/themes/` 目录下。
 3.  在 `Typecho` 后台，主题设置应用即可 ~
 4.  主题设置勾选必选项并填入相关信息。/滑稽。
 
-### 网站 ico 图标
+## 网站 ico 图标
 
 - 主题设置填入 `ico` 链接地址。( ico 格式)  
   或者上传到主题目录，`favicon.ico` 。
 
-### 个人链接
+## 个人链接
 
 - 主题设置内填入`完整链接地址`。
 
-### 友链示例
+## 友链示例
 
 - 新建独立页面,标题为 `友链`，内容参照以下格式。
 
@@ -45,22 +48,24 @@ ui from **[ikirby](https://ikirby.me/)**
 
 如果需要添加友链头像，**[] 内必须为 friend**
 
-### Pjax
+## Pjax
 
 - **需要关闭反垃圾保护**，不然会导致无法评论。
 - 设置 -> 评论 -> 取消勾选反垃圾保护。
 
-### effect
+## effect
 
 - 后台设置是否启用`一言`，`代码高亮`，`彩带`。
   - 彩带手机默认不显示。
 - 网站存活时间格式
   - 2017/11/02 11:31:29
 
-### 创建归档
+## 创建归档
 
 ~~我觉得不需要这东西~~
 
 1.  创建独立页面。
 2.  选择自定义模板 `Recent`，标题为 `Recent / 归档`。
 3.  发布。
+
+## Communication

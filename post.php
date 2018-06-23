@@ -19,7 +19,6 @@
     <ul class="post-near">
         <li class="left">« <?php $this->thePrev('%s','没有了'); ?></li>
         <li class="right"><?php $this->theNext('%s','没有了'); ?> »</li>
-        <li class="clearfix"></li>
     </ul>
     <?php $this->need('comments.php'); ?>
 </div>
