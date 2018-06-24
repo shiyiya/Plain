@@ -13,12 +13,12 @@
             <?php  $this->content(); ?>
         </div>
         <?php if($this->tags): ?>
-            <p itemprop="keywords" class="tags"><?php _e(''); ?><?php $this->tags(' , ', true, ''); ?></p>
+            <div itemprop="keywords" class="tags"><?php _e(''); ?><?php $this->tags(' , ', true, ''); ?></>
         <?php endif; ?>
     </article>
-    <ul class="post-near">
-        <li class="left">« <?php $this->thePrev('%s','没有了'); ?></li>
-        <li class="right"><?php $this->theNext('%s','没有了'); ?> »</li>
+    <ul class="post-near clearfix">
+        <li class="previous">« <?php $this->thePrev('%s','没有了'); ?></li>
+        <li class="next"><?php $this->theNext('%s','没有了'); ?> »</li>
     </ul>
     <?php $this->need('comments.php'); ?>
 </div>
