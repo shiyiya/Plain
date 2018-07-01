@@ -5,7 +5,7 @@
  * @package Plain
  * @author  ShiYi,ikirby
  * 
- * @version 1.0.1
+ * @version 1.0.2
  * @link https://www.runtua.cn
  * @UIlink https://ikirby.me/
  */
@@ -28,7 +28,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	<?php endwhile; ?>
 	</ul>
 	</article>
-	<?php $this->pageNav('&laquo; 上一页', '下一页 &raquo;'); ?>
+	<?php $this->pageNav('&laquo; ', ' &raquo;'); ?>
 </div>
 </div>
 <?php $this->need('footer.php'); ?>
