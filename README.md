@@ -3,7 +3,6 @@
 ![preView](https://raw.githubusercontent.com/shiyiya/Plain/master/screenshot.png)
 ![](https://img.shields.io/badge/Theme-%40Typecho-brightgreen.svg)
 [![Author](https://img.shields.io/badge/Author-me-brightgreen.svg)](https://runtua.cn.com)
-![Theme version](https://img.shields.io/badge/version-1.0.1-green.svg)
 ![npm](https://img.shields.io/npm/l/express.svg)
 
 极简主题，专注于创作。
@@ -12,9 +11,12 @@ ui from **[ikirby](https://ikirby.me/)**
 
 ### Change log
 
-- 2018-6-23
+- 2018-6-23 v1.0.2
   - 优化文章名字过长的问题.
   - 评论细节调整.
+- 2018-7-4 v1.1.0
+  - 使用 typo.css 重设与排版
+  - 抽离主题颜色
 
 ## 注意事项
 
@@ -59,6 +61,10 @@ ui from **[ikirby](https://ikirby.me/)**
   - 彩带手机默认不显示。
 - 网站存活时间格式
   - 2017/11/02 11:31:29
+
+## 主题颜色
+
+- 更改 style/color.css 内容，会感觉眼前一亮
 
 ## 创建归档
 
