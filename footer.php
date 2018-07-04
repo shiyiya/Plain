@@ -1,12 +1,12 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
 </div><!-- pjax end -->
-<footer id="footer" role="contentinfo">
-    <p class="center" id="live-time"> 
+<footer id="footer" class="center" role="contentinfo">
+    <p  id="live-time"> 
        <?php $this->options->liveTime(); ?>
     </p>
     <?php if( $this->options->effect && in_array('Hitokoto', $this->options->effect)): ?>
-    <div id="hitokoto" class="center">
+    <div id="hitokoto">
         <p>Everyone is their own God.</p>
     </div>
     <script>

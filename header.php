@@ -24,8 +24,10 @@
     <meta property="og:description" content=" <?php $this->description() ?>" />
 	<link rel="icon" href="<?php if($this->options->fav()): $this->options->fav(); else: $this->options->themeUrl('./favicon.ico');endif; ?>"/>
     <link rel="manifest" href="<?php $this->options->themeUrl('manifest.json'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/typo.css'); ?>" />
     <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/style.min.css'); ?>" />
-	<?php if(in_array('Prism', $this->options->effect)): ?>
+    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/color.css'); ?>" />
+    <?php if(in_array('Prism', $this->options->effect)): ?>
     <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('prism/prism.min.css'); ?>" />
 	<?php endif; ?>
 	<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>

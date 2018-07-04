@@ -2,7 +2,7 @@
 <?php $this->need('header.php'); ?>
 
 <div id="main" role="main">
-    <article class="post">
+    <article class="post typo">
         <ul class="post-meta">
             <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
            <!--  <li><?php _e(' • '); ?><?php $this->category('&'); ?></li> -->

@@ -1,0 +1,49 @@
+*::selection {
+  background-color: #a4a9ad;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset; /*滚动条背景色*/
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc; /*滚动条颜色*/
+  border-radius: 5px;
+}
+
+a {
+  color: #747677;
+  text-decoration: none;
+}
+
+a:hover {
+  /*颜色应该比正常深*/
+  color: #555;
+  border-bottom-color: #555;
+  text-decoration: none;
+}
+
+.typo a {
+  border-bottom: 1px solid #747677;
+}
+
+#logo {
+  color: #0e1a26;
+}
+
+header a {
+  /*独立页面颜色，较深，主次分明*/
+  color: #0e1a26;
+}
+
+blockquote {
+  border-left: 1px solid #71797f80;
+  background-color: #f5f2f0;
+}
+
+#comments a:hover,
+#footer a:hover,
+.post-near a:hover,
+.content a:hover {
+  color: #32393f;
+  border-bottom: 1px solid #32393f;
+}
