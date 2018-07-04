@@ -8,7 +8,7 @@
 $this->need('header.php'); ?>
 
 <div id="main" role="main">
-    <article class="post">
+    <article class="post typo">
         <h1 class="post-title" ><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
         <ul class="all-post">
         <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>

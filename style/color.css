@@ -43,7 +43,11 @@ blockquote {
 #comments a:hover,
 #footer a:hover,
 .post-near a:hover,
-.content a:hover {
+.content a:hover,
+#main a:hover {
   color: #32393f;
   border-bottom: 1px solid #32393f;
+}
+.tags a {
+  border: none;
 }
