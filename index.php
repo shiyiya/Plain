@@ -5,7 +5,7 @@
  * @package Plain
  * @author  ShiYi,ikirby
  * 
- * @version 1.0.2
+ * @version 1.2
  * @link https://www.runtua.cn
  * @UIlink https://ikirby.me/
  */
@@ -18,16 +18,16 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	 <article class="post">
 	 <ul class="post-list">
 	<?php while($this->next()): ?>
-			<li class="post-item">
+			<section class="post-item">
 				<a href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 				<span class="post-meta">
 				/
 				<time datetime="<?php $this->date('c'); ?>"><?php $this->date(); ?></time>
 				</span>
-			</li>
+			</section>
 	<?php endwhile; ?>
 	</ul>
-	</article>
+	</sec>
 	<?php $this->pageNav('&laquo; ', ' &raquo;'); ?>
 </div>
 </div>
