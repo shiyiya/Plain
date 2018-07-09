@@ -16,13 +16,12 @@ a {
 }
 
 a:hover {
-  /*颜色应该比正常深*/
   color: #555;
   border-bottom-color: #555;
   text-decoration: none;
 }
 
-.typo a {
+.post a {
   border-bottom: 1px solid #747677;
 }
 

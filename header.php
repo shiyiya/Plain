@@ -38,7 +38,6 @@
     <div id='pjax'>
     <header id="header">
     <?php if($this->is('post')) :?>
-        <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a><?php _e(' /'); ?>
         <h2 class="post-title"><?php $this->title() ?></h2>
     <?php else:?>
         <h1><a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
