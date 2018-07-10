@@ -27,7 +27,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			</section>
 	<?php endwhile; ?>
 	</ul>
-	</sec>
+	</article>
 	<?php $this->pageNav('&laquo; ', ' &raquo;'); ?>
 </div>
 </div>
