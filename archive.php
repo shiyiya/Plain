@@ -9,7 +9,7 @@
         ), '', ''); ?></h3>
         <?php if ($this->have()): ?>
     	<?php while($this->next()): ?>
-            <article class="post typo">
+            <article class="post">
     			<h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
     			<ul class="post-meta">
     				<li itemprop="author"><?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></li>

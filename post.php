@@ -2,7 +2,7 @@
 <?php $this->need('header.php'); ?>
 
 <div id="main" role="main">
-    <article class="post typo">
+    <article class="post">
         <ul class="post-meta">
             <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
            <!--  <li><?php _e(' • '); ?><?php $this->category('&'); ?></li> -->
@@ -13,12 +13,13 @@
             <?php  $this->content(); ?>
         </div>
         <?php if($this->tags): ?>
-            <div itemprop="keywords" class="tags"><?php _e(''); ?><?php $this->tags(' , ', true, ''); ?></>
+            <p itemprop="keywords" class="tags"><?php _e(''); ?><?php $this->tags(' , ', true, ''); ?></p>
         <?php endif; ?>
     </article>
-    <ul class="post-near clearfix">
-        <li class="previous">« <?php $this->thePrev('%s','没有了'); ?></li>
-        <li class="next"><?php $this->theNext('%s','没有了'); ?> »</li>
+    <ul class="post-near">
+        <li class="left">« <?php $this->thePrev('%s','没有了'); ?></li>
+        <li class="right"><?php $this->theNext('%s','没有了'); ?> »</li>
+        <li class="clearfix"></li>
     </ul>
     <?php $this->need('comments.php'); ?>
 </div>

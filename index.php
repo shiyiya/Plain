@@ -5,7 +5,7 @@
  * @package Plain
  * @author  ShiYi,ikirby
  * 
- * @version 1.2
+ * @version 1.0.1
  * @link https://www.runtua.cn
  * @UIlink https://ikirby.me/
  */
@@ -18,17 +18,17 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	 <article class="post">
 	 <ul class="post-list">
 	<?php while($this->next()): ?>
-			<section class="post-item">
+			<li class="post-item">
 				<a href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 				<span class="post-meta">
 				/
 				<time datetime="<?php $this->date('c'); ?>"><?php $this->date(); ?></time>
 				</span>
-			</section>
+			</li>
 	<?php endwhile; ?>
 	</ul>
 	</article>
-	<?php $this->pageNav('&laquo; ', ' &raquo;'); ?>
+	<?php $this->pageNav('&laquo; 上一页', '下一页 &raquo;'); ?>
 </div>
 </div>
 <?php $this->need('footer.php'); ?>

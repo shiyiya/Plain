@@ -16,7 +16,7 @@
     "url": "https://github.com/shiyiya/Plain/issues"
   },
   "scripts": {
-    "u": "gulp auto"
+    "build": "gulp auto"
   },
   "devDependencies": {
     "autoprefixer": "^8.5.0",
