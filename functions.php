@@ -10,7 +10,9 @@ function themeConfig($form) {
     $form->addInput($rssLink);
     $twitterLink = new Typecho_Widget_Helper_Form_Element_Text('twitterLink', NULL, NULL, _t('twitter'), _t('请填入完整链接。'));
     $form->addInput($twitterLink);
-	
+	$liveTime = new Typecho_Widget_Helper_Form_Element_Text('liveTime', NULL, NULL, _t('liveTime'), _t('请填入建站日期。'));
+    $form->addInput($liveTime);
+    
 	$effect = new Typecho_Widget_Helper_Form_Element_Checkbox('effect', 
     array('fixbug' => _t('必选，最懒解决bug法，偷懒真爽(oﾟvﾟ)ノ'),
 	'Hitokoto' => _t('一言'),

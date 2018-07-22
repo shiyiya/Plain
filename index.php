@@ -18,17 +18,17 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	 <article class="post">
 	 <ul class="post-list">
 	<?php while($this->next()): ?>
-			<li class="post-item">
+			<section  class="post-item">
 				<a href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 				<span class="post-meta">
 				/
 				<time datetime="<?php $this->date('c'); ?>"><?php $this->date(); ?></time>
 				</span>
-			</li>
+			</section >
 	<?php endwhile; ?>
 	</ul>
 	</article>
-	<?php $this->pageNav('&laquo; 上一页', '下一页 &raquo;'); ?>
+	<?php $this->pageNav('&laquo; ', ' &raquo;'); ?>
 </div>
 </div>
 <?php $this->need('footer.php'); ?>
