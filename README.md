@@ -3,14 +3,16 @@
 ![preView](https://raw.githubusercontent.com/shiyiya/Plain/master/screenshot.png)
 
 ![](https://img.shields.io/badge/Theme-%40Typecho-brightgreen.svg)
-[![Author](https://img.shields.io/badge/Author-me-brightgreen.svg)](https://runtua.cn.com) -![npm](https://img.shields.io/npm/l/express.svg)
+[![Author](https://img.shields.io/badge/Author-me-brightgreen.svg)](https://runtua.cn.com)
+![npm](https://img.shields.io/npm/l/express.svg)  
 极简主题，专注于创作。
 
 ui from **[ikirby](https://ikirby.me/)**
 
 ## 注意事项
 
-- 部分无法显示文章页 PV（浏览量），尝试删除 function.php 内统计代码重新进去 /滑稽。
+- `typecho` 自定义字段不支持 `php7+`，所以浏览量无法生效。
+- **需要关闭反垃圾保护**，不然会导致无法评论。
 
 ## 使用方法
 
@@ -21,7 +23,7 @@ ui from **[ikirby](https://ikirby.me/)**
 
 ## 网站 ico 图标
 
-- 主题设置填入 ico 链接地址。( ico 格式)
+- 主题设置填入 `ico` 链接地址。( 建议为 `ico` 格式)
 
 ## 个人链接
 
@@ -57,7 +59,3 @@ ui from **[ikirby](https://ikirby.me/)**
 1.  创建独立页面。
 2.  选择自定义模板 `Recent`，标题为 `Recent / 归档`。
 3.  发布。
-
-###欢迎提 issue 。
-
-如果你有什么建议可以告诉我。

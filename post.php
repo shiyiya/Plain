@@ -9,7 +9,7 @@
             <li><?php _e(' • PV：'); ?><?php if(isset($this->fields->viewsNum)){ $this->fields->viewsNum(); } ?></li>
             <li><?php _e(' • Edited：'); ?><time datetime="<?php $this->date('c'); ?>"><?php echo date('Y-m-d' , $this->modified); ?></time></li>
         </ul>
-        <div class="post-content">
+        <div class="post-content markdown-body">
             <?php  $this->content(); ?>
         </div>
         <?php if($this->tags): ?>

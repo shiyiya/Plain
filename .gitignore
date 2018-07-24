@@ -1,10 +1,6 @@
 # dependencies
 /node_modules
-/lib
-/images/preView.png
 
-gulpfile.js
-style.css
 index.js
 
 yarn.lock

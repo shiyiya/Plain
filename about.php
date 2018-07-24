@@ -14,7 +14,7 @@ $this->need('header.php'); ?>
         <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
         我发表了<?php $stat->publishedPostsNum() ?>篇文章，有<?php $stat->publishedCommentsNum() ?>条评论。
         </p>
-        <div class="post-content">
+        <div class="post-content markdown-body">
             <?php  $this->content(); ?>
         </div>
     </article>

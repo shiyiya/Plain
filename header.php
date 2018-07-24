@@ -26,14 +26,18 @@
     <link rel="manifest" href="<?php $this->options->themeUrl('manifest.json'); ?>" />
     <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/style.min.css'); ?>" />
 	<?php if(in_array('Prism', $this->options->effect)): ?>
-    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('prism/prism.min.css'); ?>" />
-	<?php endif; ?>
+    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('prism/prism.css'); ?>" />
+    <?php endif; ?>
+    
 	<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
 </head>
 <body>
 <div id="root">
     <div id='pjax'>
+    <?php if(!$this->is('index')) :?>
+        <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/github-markdown.min.css'); ?>" />
+    <?php endif;?>
     <header id="header">
     <?php if($this->is('post')) :?>
         <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a><?php _e(' /'); ?>

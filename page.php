@@ -8,7 +8,7 @@
                 <?php $this->title() ?>
             </a>
         </h1>
-        <div class="post-content">
+        <div class="post-content markdown-body">
             <?php $this->content(); ?>
         </div>
     </article>

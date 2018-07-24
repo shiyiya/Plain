@@ -19,7 +19,6 @@
     "build": "gulp auto"
   },
   "devDependencies": {
-    "autoprefixer": "^8.5.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "gulp": "^3.9.1",
@@ -28,8 +27,6 @@
     "gulp-clean-css": "^3.9.4",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.3",
-    "gulp-uglify": "^3.0.0",
-    "postcss": "^6.0.22",
-    "postcss-cssnext": "^3.1.0"
+    "gulp-uglify": "^3.0.0"
   }
 }

@@ -17,7 +17,7 @@ $this->need('header.php'); ?>
         <li>评论总数：<?php $stat->publishedCommentsNum() ?>条</li>
         <li>页面总数：<?php $stat->publishedPagesNum() ?>个</li>
         </ul>
-        <div class="post-content">
+        <div class="post-content markdown-body">
             <?php $this->widget('Widget_Contents_Post_Recent','pageSize=10000')->parse('<li class="post-item">{year}-{month}-{day}:<a href="{permalink}">{title}</a></li>'); ?>
         </div>
     </article>

@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
 </div><!-- pjax end -->
-<footer id="footer" class="center" role="contentinfo">
+<footer id="footer"role="contentinfo">
     <p  id="live-time"> 
        <?php $this->options->liveTime(); ?>
     </p>
