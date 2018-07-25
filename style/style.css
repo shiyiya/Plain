@@ -158,12 +158,11 @@ nav a {
 
 .tags a {
   display: inline-block;
-  height: 1.8em;
-  line-height: 1.8em;
-  border-radius: 1em;
+  font-size: 12px;
+  border-radius: 4px;  
   color: #5e656b;
   background-color: rgba(37, 37, 37, 0.2);
-  padding: 0 1em;
+  padding: .2em .4em;
 }
 
 .tags a:hover {
@@ -300,13 +299,13 @@ input#url {
 .respond {
   padding-top: 2em;
   border-top: 1px solid #ddd;
-  text-align: center;
 }
 #footer {
   font-size: 14px;
-  text-align: center;
 }
-
+.error-page, #footer,.respond{
+ text-align: center;
+}
 canvas {
   position: fixed;
   top: 0;
