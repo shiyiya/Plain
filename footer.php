@@ -10,13 +10,17 @@
         <p>Everyone is their own God.</p>
     </div>
     <script>
-        fetch('https://sslapi.hitokoto.cn/?encode=json')
+	$.getJSON("https://sslapi.hitokoto.cn/?encode=json", function(data){
+		var hitokoto = data.from + data.hitokoto;
+		$('#hitokoto > p').text(hitokoto);
+	});
+        /*fetch('https://sslapi.hitokoto.cn/?encode=json')
             .then(function (_) {
                 return _.text();
             }).then(function (_) {
                 var hitokoto = JSON.parse(_).from + '：' + JSON.parse(_).hitokoto;
                 $('#hitokoto > p').text(hitokoto);
-            })
+            })*/
     </script>
     <?php endif; ?> &copy;
     <?php echo date('Y'); ?>
