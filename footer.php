@@ -11,7 +11,7 @@
     </div>
     <script>
 	$.getJSON("https://sslapi.hitokoto.cn/?encode=json", function(data){
-		var hitokoto = data.from + data.hitokoto;
+		var hitokoto = data.from + '：' + data.hitokoto;
 		$('#hitokoto > p').text(hitokoto);
 	});
         /*fetch('https://sslapi.hitokoto.cn/?encode=json')
