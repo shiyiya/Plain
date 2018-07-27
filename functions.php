@@ -12,9 +12,11 @@ function themeConfig($form) {
     $form->addInput($twitterLink);
 	$liveTime = new Typecho_Widget_Helper_Form_Element_Text('liveTime', NULL, NULL, _t('liveTime'), _t('请填入建站日期。'));
     $form->addInput($liveTime);
-    
+    $themeColor = new Typecho_Widget_Helper_Form_Element_Text('themeColor', NULL, NULL, _t('themeColor'), _t('请填入网站基础颜色基调，格式为：#a4a9ad'));
+    $form->addInput($themeColor);
+
 	$effect = new Typecho_Widget_Helper_Form_Element_Checkbox('effect', 
-    array('fixbug' => _t('必选，最懒解决bug法，偷懒真爽(oﾟvﾟ)ノ'),
+    array('fixbug' => _t('必需勾选其中一个，最懒解决bug法，偷懒真爽(oﾟvﾟ)ノ'),
 	'Hitokoto' => _t('一言'),
     'Prism' => _t('代码高亮'),
     'Ribbons' => _t('彩带')),

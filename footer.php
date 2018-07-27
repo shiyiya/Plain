@@ -1,35 +1,36 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-</div><!-- pjax end -->
-<footer id="footer"role="contentinfo">
-    <p  id="live-time"> 
-       <?php $this->options->liveTime(); ?>
+<?php if(!$this->is('index')) :?>
+    <?php if(in_array('Prism', $this->options->effect)): ?>
+    <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
+    <?php endif; ?>
+<?php endif; ?>
+</div>
+<!-- pjax end -->
+<footer id="footer" role="contentinfo">
+    <p id="live-time">
+        <?php $this->options->liveTime(); ?>
     </p>
     <?php if( $this->options->effect && in_array('Hitokoto', $this->options->effect)): ?>
     <div id="hitokoto">
         <p>Everyone is their own God.</p>
     </div>
     <script>
-	$.getJSON("https://sslapi.hitokoto.cn/?encode=json", function(data){
-		var hitokoto = data.from + '：' + data.hitokoto;
-		$('#hitokoto > p').text(hitokoto);
-	});
-        /*fetch('https://sslapi.hitokoto.cn/?encode=json')
-            .then(function (_) {
-                return _.text();
-            }).then(function (_) {
-                var hitokoto = JSON.parse(_).from + '：' + JSON.parse(_).hitokoto;
-                $('#hitokoto > p').text(hitokoto);
-            })*/
+        $.getJSON("https://sslapi.hitokoto.cn/?encode=json", function (data) {
+            var hitokoto = data.from + '：' + data.hitokoto;
+            $('#hitokoto > p').text(hitokoto);
+        });
     </script>
-    <?php endif; ?> &copy;
+    <?php endif; ?>
+    &copy;
     <?php echo date('Y'); ?>
     <a href="<?php $this->options->siteUrl(); ?>">
         <?php $this->options->title(); ?>
     </a> -
     <?php _e('Using <a href="http://www.typecho.org" rel="external nofollow">Typecho</a> &'); ?>
     <?php _e('<a href="https://github.com/ShiYiYa/Plain" rel="external nofollow">Theme</a> by <a href="https://runtua.cn">Godme</a>'); ?>
-    <p>除非特别注明，本站内容采用<?php _e('<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>'); ?>进行许可。</p>
+    <p>除非特别注明，本站内容采用
+        <?php _e('<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>'); ?>进行许可。</p>
 </footer>
 <?php $this->footer(); ?>
 <canvas></canvas>
@@ -51,15 +52,11 @@
 <script src="<?php $this->options->themeUrl('js/index.min.js');?>"></script>
 <?php if(in_array('Ribbons', $this->options->effect)): ?>
 <script>
-    if(!isMobile()){
+    if (!isMobile()) {
         document.onclick = i;
         document.ontouchstart = i;
         i();
     }
-<?php endif; ?>
 </script>
-<?php if(in_array('Prism', $this->options->effect)): ?>
-<script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 <?php endif; ?>
-
 </html>
