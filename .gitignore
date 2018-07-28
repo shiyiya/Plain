@@ -1,7 +1,5 @@
 # dependencies
 /node_modules
 
-index.js
-
 yarn.lock
 yarn-error.log
