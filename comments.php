@@ -82,7 +82,7 @@ echo $commentClass;
                 </p>
                 <?php endif; ?>
                 <p>
-                    <textarea placeholder="Write here···( Support part of markdown syntax. )" rows="8" cols="50" name="text" id="textarea" class="textarea" required><?php $this->remember('text'); ?></textarea>
+                    <textarea placeholder="Write here··· &#13;&#10;Support part of markdown syntax." rows="8" cols="50" name="text" id="textarea" class="textarea" required><?php $this->remember('text'); ?></textarea>
                 </p>
                 <p>
                     <input type="submit" class="submit" value="提交" />

@@ -34,6 +34,11 @@ html [type="button"] {
   clear: both;
 }
 
+.omit{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /*---------------------------------------------*/
 
 a {
@@ -136,7 +141,6 @@ nav a {
   margin: 0;
   text-transform: uppercase;
 }
-
 .post-item a:hover {
   border-bottom: 1px solid #32393f;
 }

@@ -43,6 +43,13 @@ function y(p) {
   return t > h || t < 0 ? y(p) : t;
 }
 
+
+function ribbons() {
+  document.onclick = i;
+  document.ontouchstart = i;
+  i();
+};
+
 const pjaxContainer = "#pjax",
   pjaxTimeout = 30000,
   hostname = location.hostname;
@@ -53,35 +60,33 @@ $(document).pjax("a[target!=_blank]", pjaxContainer, {
   timeout: pjaxTimeout
 });
 
-$(document).on("pjax:start", function() {
+$(document).on("pjax:start", function () {
   $(pjaxContainer).animate({ opacity: 0.3 }, "fast");
 });
 
-$(document).on("pjax:end", function() {
+$(document).on("pjax:end", function () {
   $("a:not([href*='" + hostname + "'])").attr("target", "_blank");
   $(pjaxContainer).animate({ opacity: 1 }, "fast");
-  markedComment();
   if (typeof Prism !== "undefined") Prism.highlightAll();
-  if (!isMobile()) {
-    imageView();
-  }
+  if (!isMobile()) imageView();
+
 });
 
-$(document).on("pjax:timeout", function() {
+$(document).on("pjax:timeout", function () {
   alert("network timeout,please try again later.");
 });
 
-$(document).on("pjax:error", function() {
+$(document).on("pjax:error", function () {
   alert("unknown error! please try again later.");
 });
 
-$("#top, #back-to-top").click(function() {
+$("#top, #back-to-top").click(function () {
   $("html, body").animate({ scrollTop: 0 }, 500);
 });
 
 let oldTopValue = 0;
 let startScroll = null;
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
     $("#back-to-top").show();
     if (startScroll == null) {
@@ -103,11 +108,11 @@ function Scroll() {
 }
 
 function imageView() {
-  $("#main img").click(function() {
+  $("#main img").click(function () {
     $(".imageView > img")[0].src = this.src;
     $(".imageView").show();
   });
-  $(".imageView").click(function() {
+  $(".imageView").click(function () {
     $(".imageView").toggle();
   });
 }
@@ -147,14 +152,14 @@ function liveTime() {
   let liveSec = Math.floor((liveMin - mliveMin) * 60);
   $("#live-time").text(
     "(●'◡'●) 被续 " +
-      mliveDay +
-      " 天 " +
-      mliveHour +
-      " 小时 " +
-      mliveMin +
-      " 分 " +
-      liveSec +
-      " 秒"
+    mliveDay +
+    " 天 " +
+    mliveHour +
+    " 小时 " +
+    mliveMin +
+    " 分 " +
+    liveSec +
+    " 秒"
   );
 }
 

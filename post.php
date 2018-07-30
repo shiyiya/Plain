@@ -39,12 +39,10 @@
     </article>
     <ul class="post-near clearfix">
         <li class="previous">
-            <?php _e('« ');?>
-            <?php $this->thePrev('%s','没有了'); ?>
+            <?php $this->thePrev('« %s','没有了'); ?>
         </li>
         <li class="next">
-            <?php $this->theNext('%s','没有了'); ?>
-            <?php _e(' »');?>
+            <?php $this->theNext('%s »','没有了'); ?>
         </li>
     </ul>
     <?php $this->need('comments.php'); ?>

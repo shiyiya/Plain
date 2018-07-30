@@ -21,6 +21,19 @@ ui from **[ikirby](https://ikirby.me/)**
 3.  在 `Typecho` 后台，主题设置应用即可 ~
 4.  主题设置勾选必选项并填入相关信息。/滑稽。
 
+
+## 使用技巧
+
+`isMobile()`：判断设备是手机/电脑；  
+`ribbons()`：彩带函数；  
+你可以这样做  
+后台勾选 彩带 的情况下，仅手机显示彩带  
+自定义 Js 放在 footer.php下
+```javascript
+isMobile() && ribbons()
+```
+
+
 ## 网站 ico 图标
 
 - 主题设置填入 `ico` 链接地址。( 建议为 `ico` 格式)

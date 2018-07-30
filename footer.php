@@ -52,11 +52,8 @@
 <script src="<?php $this->options->themeUrl('js/index.min.js');?>"></script>
 <?php if(in_array('Ribbons', $this->options->effect)): ?>
 <script>
-    if (!isMobile()) {
-        document.onclick = i;
-        document.ontouchstart = i;
-        i();
-    }
+    // 自定义 Js 代码
+    ribbons();
 </script>
 <?php endif; ?>
 </html>
