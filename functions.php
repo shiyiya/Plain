@@ -35,6 +35,14 @@ function active_current_menu($archive,$expected,$active_class='active'){
     }
 }
 
+/* function themeUser(){ */
+/*     echo "<img src='https://runtua.cn/theme-api.php?author=Theme&text=".$_SERVER['HTTP_HOST'].">";
+ */    /* $url = 'https://runtua.cn/theme-api.html?'.'author=Theme&text='.$_SERVER['HTTP_HOST'];
+    $html = file_get_contents($url); */
+    /* echo $html; */
+/* };
+themeUser(); */
+
 // 添加浏览数字段到内容
 function themeFields($layout) {
     $viewsNum = new Typecho_Widget_Helper_Form_Element_Text('viewsNum', NULL, 0, _t('文章浏览数'), _t('文章浏览数统计'));

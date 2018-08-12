@@ -85,7 +85,11 @@ echo $commentClass;
                     <textarea placeholder="Write here··· &#13;&#10;Support part of markdown syntax." rows="8" cols="50" name="text" id="textarea" class="textarea" required><?php $this->remember('text'); ?></textarea>
                 </p>
                 <p>
-                    <input type="submit" class="submit" value="提交" />
+                    <input type="checkbox" id="robot" />
+                    <label for="robot">我不是机器人</label>
+                </p>
+                <p>
+                    <input type="submit" class="submit" value="提交" disabled />
                 </p>
             </div>
         </form>

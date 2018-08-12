@@ -34,10 +34,10 @@ html [type="button"] {
   clear: both;
 }
 
-.omit{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.omit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /*---------------------------------------------*/
 
@@ -163,10 +163,10 @@ nav a {
 .tags a {
   display: inline-block;
   font-size: 12px;
-  border-radius: 4px;  
+  border-radius: 4px;
   color: #5e656b;
   background-color: rgba(37, 37, 37, 0.2);
-  padding: .2em .4em;
+  padding: 0.2em 0.4em;
 }
 
 .tags a:hover {
@@ -246,6 +246,10 @@ input#url {
   cursor: pointer;
 }
 
+#comments input.submit['disabled']{
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 768px) {
   input#author,
   input#mail,
@@ -300,15 +304,51 @@ input#url {
   padding: 0 0.4em;
 }
 
+#comments input#robot {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+#comments input#robot + label {
+  color: red;
+}
+
+#comments input#robot + label::before {
+  content: "\a0";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  border: 1px solid red;
+  text-indent: 0.15em;
+  line-height: 1;
+}
+
+#comments input#robot:checked + label {
+  color: #01cd78;
+  cursor: pointer; 
+}
+
+#comments input#robot:checked + label::before {
+  background-color: #01cd78;
+  background-clip: content-box;
+  border: 1px solid #01cd78;
+  padding: 0.1em;
+}
+
 .respond {
   padding-top: 2em;
   border-top: 1px solid #ddd;
 }
+
 #footer {
   font-size: 14px;
 }
-.error-page, #footer,.respond{
- text-align: center;
+.error-page,
+#footer,
+.respond {
+  text-align: center;
 }
 canvas {
   position: fixed;
