@@ -17,8 +17,7 @@
   },
   "scripts": {
     "start": "gulp start",
-    "build": "gulp build",
-    "e":"gulp csscompress"
+    "build": "gulp build"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

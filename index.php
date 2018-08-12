@@ -7,7 +7,7 @@
  * 
  * @version 1.2
  * @link https://www.runtua.cn/
- * @UIlink https://ikirby.me/
+ * @link https://ikirby.me/
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

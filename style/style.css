@@ -314,6 +314,7 @@ input#url {
 
 #comments input#robot + label {
   color: red;
+  cursor: pointer;
 }
 
 #comments input#robot + label::before {
