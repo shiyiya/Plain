@@ -53,17 +53,18 @@ $("#top, #back-to-top").click(function() {
 function checkRobot(){
   let robot = document.getElementById("robot");
   let replyButton = document.getElementsByClassName("submit")[0];
-  robot.addEventListener("change", function() {
-    if(this.checked){
-      replyButton.disabled = false;
-      console.log('flase =>'+ replyButton.disabled)
-    }else{
-      replyButton.disabled = true;
-      console.log('true =>'+ replyButton.disabled)
-    }
-  });
+  if(robot){
+    robot.addEventListener("change", function () {
+      if (this.checked) {
+        replyButton.disabled = false;
+      } else {
+        replyButton.disabled = true;
+      }
+    });
+  }
+  
 }
-  checkRobot();
+checkRobot();
 
 
 let oldTopValue = 0;

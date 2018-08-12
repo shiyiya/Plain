@@ -16,7 +16,9 @@
     "url": "https://github.com/shiyiya/Plain/issues"
   },
   "scripts": {
-    "build": "gulp auto"
+    "start": "gulp start",
+    "build": "gulp build",
+    "e":"gulp csscompress"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

@@ -19,13 +19,18 @@ gulp.task("jscompress", function() {
 });
 gulp.task("csscompress", function() {
   return gulp
-    .src("./style/style.css")
+    .src(["./style/style.css"])
     .pipe(rename({ suffix: ".min" }))
     .pipe(autoprefixer({ browsers: ["last 3 versions"], cascade: false }))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./style"));
 });
-gulp.task("auto", function() {
+
+gulp.task("start", function () {
   gulp.watch("js/index.js", ["jscompress"]);
   gulp.watch("style/style.css", ["csscompress"]);
 });
+
+gulp.task("build", ["jscompress", "csscompress"]);
+
+

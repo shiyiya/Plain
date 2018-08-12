@@ -1,20 +1,19 @@
 /*---------------------------------------------*/
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  /* height: 8px; */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 5px;
+  background: #eee;
 }
 
 ::-moz-selection {
-  background-color: #a4a9ad;
+  background-color: #ccc;
 }
 
 ::selection {
-  background-color: #a4a9ad;
+  background-color: #ccc;
 }
 
 input:-webkit-autofill {
@@ -43,7 +42,7 @@ html [type="button"] {
 
 a {
   text-decoration: none;
-  color: #747677;
+  color: #666;
 }
 
 /*---------------------------------------------*/
@@ -55,11 +54,15 @@ a {
 }
 
 body {
-  font-family: Montserrat, "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro",
-    Arial, sans-serif;
+  font-family: Lucida Sans Unicode, Verdana, "Hiragino Sans GB", -apple-system,
+    Microsoft Yahei, sans-serif;
+  /*
+  *  https://labs.qianduan.net/macfont.html
+  */
+  -webkit-font-smoothing: antialiased;
   font-weight: 400;
   font-size: 16px;
-  color: #39434d;
+  color: #666;
   letter-spacing: 0.5px;
   background-size: cover;
 }
@@ -71,11 +74,11 @@ body {
 }
 
 header a {
-  color: #0e1a26;
+  color: #000;
 }
 
 #logo {
-  color: #0e1a26;
+  color: #000;
 }
 
 #header h1,
@@ -142,12 +145,12 @@ nav a {
   text-transform: uppercase;
 }
 .post-item a:hover {
-  border-bottom: 1px solid #32393f;
+  border-bottom: 1px solid #333;
 }
 
 .post-meta {
   font-size: smaller;
-  color: #8796a3;
+  color: #999;
 }
 
 .post > .post-meta {
@@ -164,14 +167,14 @@ nav a {
   display: inline-block;
   font-size: 12px;
   border-radius: 4px;
-  color: #5e656b;
-  background-color: rgba(37, 37, 37, 0.2);
+  color: #666;
+  background-color: #ccc;
   padding: 0.2em 0.4em;
 }
 
 .tags a:hover {
   border: none;
-  color: #0e1a26;
+  color: #000;
 }
 
 .page-navigator,
@@ -240,13 +243,13 @@ input#url {
   line-height: 2em;
   color: #fff;
   padding: 3px 10px;
-  background-color: #575d61;
+  background-color: #666;
   border-radius: 3px;
   vertical-align: middle;
   cursor: pointer;
 }
 
-#comments input.submit['disabled']{
+#comments input.submit:disabled {
   cursor: not-allowed;
 }
 
@@ -327,7 +330,7 @@ input#url {
 
 #comments input#robot:checked + label {
   color: #01cd78;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 #comments input#robot:checked + label::before {
