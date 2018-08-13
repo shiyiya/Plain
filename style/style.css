@@ -1,11 +1,11 @@
 /*---------------------------------------------*/
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
   /* height: 8px; */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #eee;
+  background: #ddd;
 }
 
 ::-moz-selection {
@@ -46,13 +46,6 @@ a {
 }
 
 /*---------------------------------------------*/
-#root {
-  max-width: 90%;
-  width: 720px;
-  margin: 3em auto;
-  display: block;
-}
-
 body {
   font-family: Lucida Sans Unicode, Verdana, "Hiragino Sans GB", -apple-system,
     Microsoft Yahei, sans-serif;
@@ -65,6 +58,27 @@ body {
   color: #666;
   letter-spacing: 0.5px;
   background-size: cover;
+}
+
+#root {
+  max-width: 90%;
+  width: 720px;
+  margin: 3em auto;
+  display: block;
+}
+
+#root::before {
+  content: "";
+  display: block;
+  opacity: 0.15;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(http://img.runtua.cn/images/2018/01/17/5.jpg) center/cover
+    no-repeat;
 }
 
 #header {
