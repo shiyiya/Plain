@@ -62,23 +62,26 @@ echo $commentClass;
             <div class="center">
                 <?php if($this->user->hasLogin()): ?>
                 <p>
-                    <?php _e('欢迎回来: '); ?>
+                    <?php _e('当前身份: '); ?>
                     <a href="<?php $this->options->profileUrl(); ?>">
                         <?php $this->user->screenName(); ?>
-                    </a>.
-                    <a href="<?php $this->options->logoutUrl(); ?>" title="Logout">
+                    </a>
+
+                    <!-- Disable Logout
+                        <a href="<?php $this->options->logoutUrl(); ?>" title="Logout">
                         <?php _e('退出'); ?> &raquo;</a>
+                     -->
                 </p>
                 <?php else: ?>
                 <p>
                     <input type="text" name="author" placeholder="name" id="author" class="text" autocomplete value="<?php $this->remember('author'); ?>"
                         required />
-                    <input type="email" name="mail" placeholder="e-mail" id="mail" class="text" autocomplete value="<?php $this->remember('mail'); ?>"
-                        <?php if ($this->options->commentsRequireMail): ?> required
-                    <?php endif; ?> />
-                    <input type="url" name="url" placeholder="website" id="url" class="text" autocomplete placeholder="<?php _e('http://'); ?>"
-                        value="<?php $this->remember('url'); ?>" <?php if ($this->options->commentsRequireURL): ?> required
-                    <?php endif; ?> />
+                    <?php if ($this->options->commentsRequireMail): ?>
+                        <input type="email" name="mail" placeholder="e-mail*" id="mail" class="text" autocomplete value="<?php $this->remember('mail'); ?>" required />
+                    <?php endif; ?> 
+                    <?php if ($this->options->commentsRequireURL): ?>
+                        <input type="url" name="url" id="url" class="text" autocomplete placeholder="<?php _e('http://*'); ?>" value="<?php $this->remember('url'); ?>"  required />
+                    <?php endif; ?>
                 </p>
                 <?php endif; ?>
                 <p>
