@@ -44,6 +44,13 @@
     <link rel="manifest" href="<?php $this->options->manifest('manifest.json') || $this->options->themeUrl('manifest.json') ?>" />
     <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/style.min.css'); ?>" />
     
+    <!-- Custom Style -->
+    <style>
+        #root::before {
+            background-image:url(<?php $this->options->backGroundImage(); ?>)
+        }
+    </style>
+
     <!-- Used CDN -->
 	<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>

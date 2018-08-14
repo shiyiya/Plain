@@ -14,6 +14,8 @@ function themeConfig($form) {
     $form->addInput($liveTime);
     $themeColor = new Typecho_Widget_Helper_Form_Element_Text('themeColor', NULL, NULL, _t('themeColor'), _t('请填入网站基础颜色基调，格式为：#a4a9ad'));
     $form->addInput($themeColor);
+    $backGroundImage = new Typecho_Widget_Helper_Form_Element_Text('backGroundImage', NULL, NULL, _t('backGroundImage'), _t('请填入完整 url，作为网站背景，不填则无'));
+    $form->addInput($backGroundImage);
 
 	$effect = new Typecho_Widget_Helper_Form_Element_Checkbox('effect', 
     array('fixbug' => _t('必需勾选其中一个，最懒解决bug法，偷懒真爽(oﾟvﾟ)ノ'),

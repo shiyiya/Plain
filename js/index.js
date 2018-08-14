@@ -177,7 +177,7 @@ function liveTime() {
   );
 }
 if (
-  !$("#live-time")
+  $("#live-time")
     .text()
     .trim()
 ) {
