@@ -45,7 +45,7 @@
 </div>
 </body>
 <script src="<?php $this->options->themeUrl('js/index.min.js');?>"></script>
-<?php if(!$this->is('index') && in_array('Prism', $this->options->effect) :?>
+<?php if(!$this->is('index') && in_array('Prism', $this->options->effect)) :?>
     <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 <?php endif; ?>
 <?php if(in_array('Ribbons', $this->options->effect)): ?>
