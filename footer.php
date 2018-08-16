@@ -1,10 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<?php if(!$this->is('index')) :?>
-    <?php if(in_array('Prism', $this->options->effect)): ?>
-    <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
-    <?php endif; ?>
-<?php endif; ?>
 </div>
 <!-- pjax end -->
 <footer id="footer" role="contentinfo">
@@ -50,9 +45,11 @@
 </div>
 </body>
 <script src="<?php $this->options->themeUrl('js/index.min.js');?>"></script>
+<?php if(!$this->is('index') && in_array('Prism', $this->options->effect) :?>
+    <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
+<?php endif; ?>
 <?php if(in_array('Ribbons', $this->options->effect)): ?>
 <script>
-    // 自定义 Js 代码
     ribbons();
 </script>
 <?php endif; ?>

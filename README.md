@@ -72,11 +72,21 @@ isMobile() && ribbons();
 
 ### 可选功能
 
+#### 社交链接
+
+- 主题设置 => 填入完整 url
+
 #### 背景图
+
+- 主题设置 => 填入完整 url
 
 #### 一言
 
+- [Hitokoto - 一言](https://hitokoto.cn/)
+
 #### 代码高亮
+
+[Prism](http://prismjs.com)：prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
 
 #### 类彩带
 
@@ -88,7 +98,7 @@ isMobile() && ribbons();
 
 - 2017/11/02 11:31:29
 
-### 归档
+#### 归档
 
 1.  创建独立页面。
 2.  选择自定义模板 `Recent`，标题自拟，`Recent / 归档`。
