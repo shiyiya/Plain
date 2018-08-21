@@ -41,7 +41,7 @@
         <li class="previous">
             <?php $this->thePrev('« %s','没有了'); ?>
         </li>
-        <li class="next">
+        <li class="next-post">
             <?php $this->theNext('%s »','没有了'); ?>
         </li>
     </ul>

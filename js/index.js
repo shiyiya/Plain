@@ -127,7 +127,7 @@ function imageView() {
     $(".imageView").show();
   });
   $(".imageView").click(function() {
-    $(".imageView").toggle();
+    $(this).hide();
   });
 }
 
