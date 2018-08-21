@@ -67,6 +67,7 @@ $(document).on("pjax:end", function() {
   $("a:not([href*='" + hostname + "'])").attr("target", "_blank");
   $(pjaxContainer).animate({ opacity: 1 }, "fast");
   if (typeof Prism !== "undefined") Prism.highlightAll();
+  console.log(typeof Prism);
   if (!isMobile()) imageView();
   checkRobot();
 });
