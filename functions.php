@@ -22,7 +22,7 @@ function themeConfig($form) {
 	'Hitokoto' => _t('一言'),
     'Prism' => _t('代码高亮'),
     'Ribbons' => _t('彩带')),
-    array('Hitokoto', 'Prism', 'Ribbons'), _t('额外功能'));
+    array('fixbug'), _t('额外功能'));
     
     $form->addInput($effect->multiMode());
 }
