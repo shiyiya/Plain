@@ -3,6 +3,7 @@
 </div>
 <!-- pjax end -->
 <footer id="footer" role="contentinfo">
+    <p>你是第 <?php $this->fields->viewsNum(); ?> 个浏览本站的幸运儿！</p>
     <p id="live-time">
         <?php $this->options->liveTime(); ?>
     </p>

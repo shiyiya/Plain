@@ -2,14 +2,18 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
-    $fav = new Typecho_Widget_Helper_Form_Element_Text('fav', NULL, NULL, _t('站点LOGO'), _t('在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO,不填即为默认。'));
-    $form->addInput($fav);
+    /* $fav = new Typecho_Widget_Helper_Form_Element_Text('fav', NULL, NULL, _t('站点LOGO'), _t('在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO,不填即为默认。'));
+    $form->addInput($fav); */
+    $home = new Typecho_Widget_Helper_Form_Element_Text('home', NULL, '首页', _t('主页替代文字'), _t('默认为 首页。'));
+    $form->addInput($home);
+
     $GitHubLink = new Typecho_Widget_Helper_Form_Element_Text('GitHubLink', NULL, NULL, _t('GitHub'), _t('请填入完整链接。'));
     $form->addInput($GitHubLink);
     $rssLink = new Typecho_Widget_Helper_Form_Element_Text('rssLink', NULL, NULL, _t('rss'), _t('请填入完整链接。'));
     $form->addInput($rssLink);
     $twitterLink = new Typecho_Widget_Helper_Form_Element_Text('twitterLink', NULL, NULL, _t('twitter'), _t('请填入完整链接。'));
     $form->addInput($twitterLink);
+
 	$liveTime = new Typecho_Widget_Helper_Form_Element_Text('liveTime', NULL, NULL, _t('liveTime'), _t('请填入建站日期。'));
     $form->addInput($liveTime);
     $themeColor = new Typecho_Widget_Helper_Form_Element_Text('themeColor', NULL, NULL, _t('themeColor'), _t('请填入网站基础颜色基调，格式为：#a4a9ad'));
@@ -18,12 +22,11 @@ function themeConfig($form) {
     $form->addInput($backGroundImage);
 
 	$effect = new Typecho_Widget_Helper_Form_Element_Checkbox('effect', 
-    array('fixbug' => _t('必需勾选其中一个，最懒解决bug法，偷懒真爽(oﾟvﾟ)ノ'),
+    array('fixbug' => _t('(oﾟvﾟ)ノ'),
 	'Hitokoto' => _t('一言'),
     'Prism' => _t('代码高亮'),
     'Ribbons' => _t('彩带')),
     array('fixbug'), _t('额外功能'));
-    
     $form->addInput($effect->multiMode());
 }
 
@@ -36,14 +39,6 @@ function active_current_menu($archive,$expected,$active_class='active'){
         echo '';
     }
 }
-
-/* function themeUser(){ */
-/*     echo "<img src='https://runtua.cn/theme-api.php?author=Theme&text=".$_SERVER['HTTP_HOST'].">";
- */    /* $url = 'https://runtua.cn/theme-api.html?'.'author=Theme&text='.$_SERVER['HTTP_HOST'];
-    $html = file_get_contents($url); */
-    /* echo $html; */
-/* };
-themeUser(); */
 
 // 添加浏览数字段到内容
 function themeFields($layout) {

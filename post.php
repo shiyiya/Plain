@@ -9,12 +9,10 @@
             </time>
             </li>
             <li>
-                <?php _e(' • '); ?>
-                <?php $this->category('&'); ?>
+                <?php if($this->category){ _e(' • '); $this->category('&'); }; ?>
             </li>
             <li>
-                <?php _e(' • PV：'); ?>
-                <?php if(isset($this->fields->viewsNum)){ $this->fields->viewsNum(); } ?>
+                <?php if(isset($this->fields->viewsNum)){  _e(' • PV：'); $this->fields->viewsNum(); } ?>
             </li>
             <li>
                 <?php _e(' • Edited：'); ?>
