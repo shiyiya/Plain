@@ -74,14 +74,10 @@ echo $commentClass;
                 </p>
                 <?php else: ?>
                 <p>
-                    <input type="text" name="author" placeholder="name" id="author" class="text" autocomplete value="<?php $this->remember('author'); ?>"
+                    <input type="text" name="author" placeholder="name*" id="author" class="text" autocomplete value="<?php $this->remember('author'); ?>"
                         required />
-                    <?php if ($this->options->commentsRequireMail): ?>
-                        <input type="email" name="mail" placeholder="e-mail*" id="mail" class="text" autocomplete value="<?php $this->remember('mail'); ?>" required />
-                    <?php endif; ?> 
-                    <?php if ($this->options->commentsRequireURL): ?>
-                        <input type="url" name="url" id="url" class="text" autocomplete placeholder="<?php _e('http://*'); ?>" value="<?php $this->remember('url'); ?>"  required />
-                    <?php endif; ?>
+                        <input type="email" name="mail" placeholder="e-mail<?php $this->options->commentsRequireMail ? _e('*') : '' ?>" id="mail" class="text" autocomplete value="<?php $this->remember('mail'); ?>" required />
+                        <input type="url" name="url" id="url" class="text" autocomplete placeholder="http://<?php $this->options->commentsRequireURL ? _e('*') : '' ?>" value="<?php $this->remember('url'); ?>"  required />
                 </p>
                 <?php endif; ?>
                 <p>
