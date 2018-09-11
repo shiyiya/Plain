@@ -48,17 +48,22 @@
     <link rel="preload" href="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js" as="script">
     <link rel="preload" href="<?php $this->options->themeUrl('js/index.min.js');?>" as="script">
 
+
+    <!-- Google analytics -->
+    <?php _e($this->options->GoogleAnalytics) ?>
+
+    
+    <!-- Used CDN -->
+	<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+
+
     <!-- Custom Style -->
     <style>
         #root::before {
             background-image:url(<?php $this->options->backGroundImage(); ?>)
         }
     </style>
-
-    <!-- Used CDN -->
-	<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
-
 
 </head>
 <body>

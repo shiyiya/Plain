@@ -7,6 +7,7 @@ function themeConfig($form) {
     $home = new Typecho_Widget_Helper_Form_Element_Text('home', NULL, '首页', _t('主页替代文字'), _t('默认为 首页。'));
     $form->addInput($home);
 
+    /* Social account */
     $GitHubLink = new Typecho_Widget_Helper_Form_Element_Text('GitHubLink', NULL, NULL, _t('GitHub'), _t('请填入完整链接。'));
     $form->addInput($GitHubLink);
     $rssLink = new Typecho_Widget_Helper_Form_Element_Text('rssLink', NULL, NULL, _t('rss'), _t('请填入完整链接。'));
@@ -14,7 +15,7 @@ function themeConfig($form) {
     $twitterLink = new Typecho_Widget_Helper_Form_Element_Text('twitterLink', NULL, NULL, _t('twitter'), _t('请填入完整链接。'));
     $form->addInput($twitterLink);
 
-	$liveTime = new Typecho_Widget_Helper_Form_Element_Text('liveTime', NULL, NULL, _t('liveTime'), _t('请填入建站日期。'));
+	$liveTime = new Typecho_Widget_Helper_Form_Element_Text('liveTime', NULL, NULL, _t('liveTime'), _t('请填入建站日期 格式：2017/11/02 11:31:29'));
     $form->addInput($liveTime);
     $themeColor = new Typecho_Widget_Helper_Form_Element_Text('themeColor', NULL, NULL, _t('themeColor'), _t('请填入网站基础颜色基调，格式为：#a4a9ad'));
     $form->addInput($themeColor);
@@ -28,6 +29,10 @@ function themeConfig($form) {
     'Ribbons' => _t('彩带')),
     array('fixbug'), _t('额外功能'));
     $form->addInput($effect->multiMode());
+
+    /* Google analytics */
+    $GoogleAnalytics = new Typecho_Widget_Helper_Form_Element_Text('GoogleAnalytics', NULL, 'GoogleAnalytics', _t('输入你的Google analytics给你的自定义代码'), _t('默认为空。'));
+    $form->addInput($GoogleAnalytics);
 }
 
 function active_current_menu($archive,$expected,$active_class='active'){
