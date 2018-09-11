@@ -194,29 +194,23 @@ function Scroll () {
  *
  *
  */
+const start = new Date(
+  $('#live-time')
+    .text()
+    .trim() || '2017/11/02 11:31:29'
+)
 function liveTime () {
-  const start = new Date(
-    $('#live-time')
-      .text()
-      .trim() || '2017/11/02 11:31:29'
-  )
   const live = Math.floor(new Date().getTime() - start.getTime())
-
   const m = 24 * 60 * 60 * 1000
 
   let liveDay = live / m
-
   let mliveDay = Math.floor(liveDay)
-
   let liveHour = (liveDay - mliveDay) * 24
-
   let mliveHour = Math.floor(liveHour)
-
   let liveMin = (liveHour - mliveHour) * 60
-
   let mliveMin = Math.floor((liveHour - mliveHour) * 60)
-
   let liveSec = Math.floor((liveMin - mliveMin) * 60)
+
   $('#live-time').text(
     "(●'◡'●) 被续 " +
       mliveDay +
