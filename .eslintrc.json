@@ -1,3 +1,17 @@
 {
-    "extends": "standard"
+  "extends": "standard",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "Prism": true
+  },
+  "rules": {
+    "no-unused-vars": "off"
+  }
 }
