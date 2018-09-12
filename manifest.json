@@ -10,16 +10,42 @@
   "orientation": "portrait",
   "theme_color": "#a4a9ad",
   "background_color": "#fff",
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": "/",
+    "update_via_cache": "none"
+  },
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "192x192",
-      "type": "image/webp"
+      "src": "images/icon/icon-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
     },
     {
-      "src": "favicon.ico",
+      "src": "images/icon/icon-64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/icon/icon-114.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "114x114"
+    },
+    {
+      "src": "images/icon/icon-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/in-game-1x.jpg",
+      "sizes": "640x480",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "screenshots/in-game-2x.jpg",
+      "sizes": "1280x920",
+      "type": "image/jpeg"
     }
   ],
   "prefer_related_applications": false

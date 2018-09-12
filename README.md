@@ -1,6 +1,6 @@
 ## Theme for Typecho.
 
-![preView](./screenshot.png)
+![preView](./theme-screenshot.png)
 
 ![](https://img.shields.io/badge/Theme-%40Typecho-brightgreen.svg)
 [![Author](https://img.shields.io/badge/Author-me-brightgreen.svg)](https://runtua.cn.com)
@@ -38,7 +38,7 @@ ui from **[ikirby](https://ikirby.me/)**
 自定义 Js 放在 footer.php 下
 
 ```javascript
-isMobile() && ribbons();
+isMobile() && ribbons()
 ```
 
 ## 主题设置

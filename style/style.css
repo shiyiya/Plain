@@ -48,7 +48,40 @@ a {
 .post-content.markdown-body p {
   line-height: 1.7;
 }
-
+img[alt*='col-1-center'] {
+  display: inline-block;
+  max-width: 50% !important;
+  transform: translateX(50%);
+}
+img[alt*='col-2'] {
+  display: inline-block;
+  max-width: 48% !important;
+}
+img[alt*='col-2'] + img[alt*='col-2'] {
+  padding-left: 2%;
+}
+img[alt*='col-3'] {
+  display: inline-block;
+  max-width: 31.333% !important;
+}
+img[alt*='col-3'] + img[alt*='col-3'] {
+  padding-left: 1%;
+}
+img[alt*='col-4'] {
+  display: inline-block;
+  max-width: 21% !important;
+}
+img[alt*='col-4'] + img[alt*='col-4'] {
+  padding-left: 1%;
+}
+img[alt*='qr'] {
+  max-width: 20% !important;
+}
+img[alt*='img2icon'] {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
 /*---------------------------------------------*/
 body {
   font-family: Lucida Sans Unicode, Verdana, 'Hiragino Sans GB', -apple-system,
