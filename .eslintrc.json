@@ -12,6 +12,7 @@
     "Prism": true
   },
   "rules": {
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "one-var": [2, "always"]
   }
 }

@@ -1,14 +1,9 @@
-var gulp = require('gulp')
-
-var uglify = require('gulp-uglify')
-
-var babel = require('gulp-babel')
-
-var rename = require('gulp-rename')
-
-var cleanCSS = require('gulp-clean-css')
-
-var autoprefixer = require('gulp-autoprefixer')
+var gulp = require('gulp'),
+  uglify = require('gulp-uglify'),
+  babel = require('gulp-babel'),
+  rename = require('gulp-rename'),
+  cleanCSS = require('gulp-clean-css'),
+  autoprefixer = require('gulp-autoprefixer')
 
 gulp.task('jscompress', function () {
   return gulp

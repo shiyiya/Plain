@@ -6,18 +6,18 @@
  */
 
 // prettier-ignore
-var c = document.getElementsByTagName('canvas')[0]
-var x = c.getContext('2d')
-var pr = window.devicePixelRatio || 1
-var w = window.innerWidth
-var h = window.innerHeight
-var f = 90
-var q
-var m = Math
-var r = 0
-var u = m.PI * 2
-var v = m.cos
-var z = m.random
+var c = document.getElementsByTagName('canvas')[0],
+  x = c.getContext('2d'),
+  pr = window.devicePixelRatio || 1,
+  w = window.innerWidth,
+  h = window.innerHeight,
+  f = 90,
+  q,
+  m = Math,
+  r = 0,
+  u = m.PI * 2,
+  v = m.cos,
+  z = m.random
 c.width = w * pr
 c.height = h * pr
 x.scale(pr, pr)
@@ -33,9 +33,8 @@ function d (i, j) {
   x.beginPath()
   x.moveTo(i.x, i.y)
   x.lineTo(j.x, j.y)
-  let k = j.x + (z() * 2 - 0.25) * f
-
-  let n = y(j.y)
+  let k = j.x + (z() * 2 - 0.25) * f,
+    n = y(j.y)
   x.lineTo(k, n)
   x.closePath()
   r -= u / -50
@@ -56,9 +55,9 @@ function y (p) {
 }
 
 /** start */
-const pjaxContainer = '#pjax'
-const pjaxTimeout = 30000
-const hostname = document.location.hostname
+const pjaxContainer = '#pjax',
+  pjaxTimeout = 30000,
+  hostname = document.location.hostname
 
 $("a:not([href*='" + hostname + "'])").attr('target', '_blank')
 
@@ -103,8 +102,8 @@ $('#top, #back-to-top').click(function () {
   $('html, body').animate({ scrollTop: 0 }, 500)
 })
 
-let oldTopValue = 0
-let startScroll = null
+let oldTopValue = 0,
+  startScroll = null
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
     $('#back-to-top').show()
@@ -118,8 +117,8 @@ $(window).scroll(function () {
  * @return {void}
  */
 function checkRobot () {
-  let robot = document.getElementById('robot')
-  let replyButton = document.getElementsByClassName('submit')[0]
+  let robot = document.getElementById('robot'),
+    replyButton = document.getElementsByClassName('submit')[0]
   if (robot) {
     robot.addEventListener('change', function () {
       if (this.checked) {
@@ -136,16 +135,15 @@ function checkRobot () {
  * @return {boolean}
  */
 function isMobile () {
-  const Agents = navigator.userAgent
-
-  const mobileAgents = [
-    'Android',
-    'iPhone',
-    'SymbianOS',
-    'Windows Phone',
-    'iPad',
-    'iPod'
-  ]
+  const Agents = navigator.userAgent,
+    mobileAgents = [
+      'Android',
+      'iPhone',
+      'SymbianOS',
+      'Windows Phone',
+      'iPad',
+      'iPod'
+    ]
   for (let agents of mobileAgents) {
     while (Agents.includes(agents)) {
       return true
@@ -194,22 +192,24 @@ function Scroll () {
  *
  *
  */
+/* eslint-disable */
 const start = new Date(
   $('#live-time')
     .text()
     .trim() || '2017/11/02 11:31:29'
 )
-function liveTime () {
-  const live = Math.floor(new Date().getTime() - start.getTime())
-  const m = 24 * 60 * 60 * 1000
+/* eslint-disable */
+function liveTime() {
+  const live = Math.floor(new Date().getTime() - start.getTime()),
+    m = 24 * 60 * 60 * 1000
 
-  let liveDay = live / m
-  let mliveDay = Math.floor(liveDay)
-  let liveHour = (liveDay - mliveDay) * 24
-  let mliveHour = Math.floor(liveHour)
-  let liveMin = (liveHour - mliveHour) * 60
-  let mliveMin = Math.floor((liveHour - mliveHour) * 60)
-  let liveSec = Math.floor((liveMin - mliveMin) * 60)
+  let liveDay = live / m,
+    mliveDay = Math.floor(liveDay),
+    liveHour = (liveDay - mliveDay) * 24,
+    mliveHour = Math.floor(liveHour),
+    liveMin = (liveHour - mliveHour) * 60,
+    mliveMin = Math.floor((liveHour - mliveHour) * 60),
+    liveSec = Math.floor((liveMin - mliveMin) * 60)
 
   $('#live-time').text(
     "(●'◡'●) 被续 " +
