@@ -24,7 +24,7 @@ ui from **[ikirby](https://ikirby.me/)**
 ## 使用方法
 
 1.  Clone or download.
-2.  上传 **Plan** 文件夹内到 `usr/themes/` 目录下。
+2.  上传 **Plan 文件夹** 到 `usr/themes/` 目录下。
 3.  在 `Typecho` 后台，主题设置应用即可 ~
 4.  主题设置勾选必选项并填入相关信息。/滑稽。
 
