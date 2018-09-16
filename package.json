@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "gulp start",
-    "build": "gulp build"
+    "build": "gulp build &&  copy .\\*.php .\\Plain"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

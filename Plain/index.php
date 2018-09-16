@@ -1,11 +1,11 @@
 <?php
 /**
- * 极简主题，专注创作。
+ * 思于心现于形，极简主题，专注于创作。
  * 
  * @package Plain
  * @author  ShiYi,ikirby
  * 
- * @version 1.2
+ * @version 1.2.1
  * @link https://www.runtua.cn/
  * @link https://ikirby.me/
  */
