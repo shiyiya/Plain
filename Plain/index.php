@@ -1,6 +1,6 @@
 <?php
 /**
- * 思于心现于形，极简主题，专注于创作。
+ * 极简主题，专注创作。
  * 
  * @package Plain
  * @author  ShiYi,ikirby

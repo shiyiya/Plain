@@ -1,12 +1,12 @@
 ## Theme for Typecho.
 
-![preView](./theme-screenshot.png)
+![preView](./screenshot.png)
 
 ![](https://img.shields.io/badge/Theme-%40Typecho-brightgreen.svg)
 [![Author](https://img.shields.io/badge/Author-me-brightgreen.svg)](https://runtua.cn.com)
 ![npm](https://img.shields.io/npm/l/express.svg)
 
-极简主题，专注于创作。
+思于心现于形，极简主题，专注于创作。
 
 ui from **[ikirby](https://ikirby.me/)**
 
@@ -25,7 +25,7 @@ ui from **[ikirby](https://ikirby.me/)**
 ## 使用方法
 
 1.  Clone or download.
-2.  上传本主题，并放置在 `usr/themes/` 目录下。
+2.  上传 **Plan** 文件夹内到 `usr/themes/` 目录下。
 3.  在 `Typecho` 后台，主题设置应用即可 ~
 4.  主题设置勾选必选项并填入相关信息。/滑稽。
 

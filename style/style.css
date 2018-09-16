@@ -46,7 +46,7 @@ a {
 }
 
 .post-content.markdown-body p {
-  line-height: 1.7;
+  line-height: 2;
 }
 img[alt*='col-1-center'] {
   display: inline-block;

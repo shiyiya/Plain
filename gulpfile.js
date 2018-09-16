@@ -31,9 +31,31 @@ gulp.task('csscompress', function () {
     .pipe(gulp.dest('./style'))
 })
 
+gulp.task('buildjs', function () {
+  return gulp
+    .src('./js/index.js')
+    .pipe(
+      babel({
+        presets: ['env']
+      })
+    )
+    .pipe(rename('plain.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./Plain/js'))
+})
+
+gulp.task('buildcss', function () {
+  return gulp
+    .src(['./style/style.css'])
+    .pipe(rename('plain.css'))
+    .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('./Plain/style'))
+})
+
 gulp.task('start', function () {
   gulp.watch('js/index.js', ['jscompress'])
   gulp.watch('style/style.css', ['csscompress'])
 })
 
-gulp.task('build', ['jscompress', 'csscompress'])
+gulp.task('build', ['buildjs', 'buildcss'])

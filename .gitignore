@@ -3,3 +3,7 @@
 
 yarn.lock
 yarn-error.log
+
+
+# my blog config
+./Plain/images/icon/*
