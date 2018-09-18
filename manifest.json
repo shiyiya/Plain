@@ -1,39 +1,25 @@
 {
-  "name": "godme",
-  "short_name": "godme",
+  "name": "OZOO",
+  "short_name": "OZOO",
   "scope": "/",
   "start_url": "/?from=pwa",
   "display": "standalone",
-  "description": "Everyone is their own God.",
+  "description": "遍身罗绮者，不是养蚕人。",
   "dir": "rtl",
   "lang": "cn",
   "orientation": "portrait",
   "theme_color": "#a4a9ad",
   "background_color": "#fff",
-  "serviceworker": {
-    "src": "sw.js",
-    "scope": "/",
-    "update_via_cache": "none"
-  },
   "icons": [
     {
-      "src": "images/icon/icon-48.png",
-      "type": "image/png",
-      "sizes": "48x48"
+      "src": "https://abs.twimg.com/responsive-web/web/ltr/icon-default.882fa4ccf6539401.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      "src": "images/icon/icon-64.png",
-      "sizes": "64x64"
-    },
-    {
-      "src": "images/icon/icon-114.png",
-      "type": "image/png",
-      "sizes": "114x114"
-    },
-    {
-      "src": "images/icon/icon-128.png",
-      "type": "image/png",
-      "sizes": "128x128"
+      "src": "https://abs.twimg.com/responsive-web/web/ltr/icon-default.882fa4ccf6539401.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "screenshots": [

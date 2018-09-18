@@ -53,4 +53,15 @@
     ribbons();
 </script>
 <?php endif; ?>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+        .then(function(reg){
+            console.log('serviceWorker is working!');
+        })
+        .catch(function(error) {
+            console.log('serviceWorker failed with ' + error);
+        });
+        }
+    </script>
 </html>

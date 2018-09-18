@@ -27,7 +27,7 @@
 
     <!-- Disable Baidu snapshot -->
     <meta name="Baiduspider" content="noarchive">
-
+   
 
     <!-- OGP https://www.ogp.me/ -->
     <?php if($this->is('post')||$this->is('page')): ?>
@@ -44,7 +44,7 @@
     <link rel="manifest" href="<?php $this->options->manifest('manifest.json') || $this->options->themeUrl('manifest.json') ?>" />
     <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/style.min.css'); ?>" />
     
-    <link rel="preload" href="<?php $this->options->backGroundImage(); ?>" as="image">
+   <!--  <link rel="preload" href="<?php $this->options->backGroundImage(); ?>" as="image"> -->
     <link rel="preload" href="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js" as="script">
     <link rel="preload" href="<?php $this->options->themeUrl('js/index.min.js');?>" as="script">
 

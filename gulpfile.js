@@ -28,7 +28,7 @@ gulp.task('csscompress', function () {
 
 gulp.task('buildjs', function () {
   return gulp
-    .src('./js/index.js')
+    .src(['./js/index.js'])
     .pipe(
       babel({
         presets: ['env']
@@ -37,6 +37,19 @@ gulp.task('buildjs', function () {
     .pipe(rename('plain.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./Plain/js'))
+})
+
+gulp.task('buildsw', function () {
+  return gulp
+    .src('./sw.js')
+    .pipe(
+      babel({
+        presets: ['env']
+      })
+    )
+    .pipe(rename('sw.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./Plain/'))
 })
 
 gulp.task('buildcss', function () {
@@ -53,4 +66,4 @@ gulp.task('start', function () {
   gulp.watch('style/style.css', ['csscompress'])
 })
 
-gulp.task('build', ['buildjs', 'buildcss'])
+gulp.task('build', ['buildjs', 'buildcss', 'buildsw'])
