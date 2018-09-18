@@ -21,10 +21,12 @@ ui from **[ikirby](https://ikirby.me/)**
 
 - **需要关闭反垃圾保护**，不然会导致无法评论。  
   -> 设置 -> 评论 -> 取消勾选反垃圾保护。
+- 将 `sw.min.js` 移动到 **网站根目录**，修改 `manifest.js` 文件
 
 ## 主题介绍
 
 ![plain-offline](./screenshots/plain-offline.gif)
+![plain-offline](./screenshots/desktop-plain.gif)
 
 ## 使用方法
 

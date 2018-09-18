@@ -5,7 +5,7 @@
  * @package Plain
  * @author  ShiYi,ikirby
  * 
- * @version 1.2.1
+ * @version 1.2.2
  * @link https://www.runtua.cn/
  * @link https://ikirby.me/
  */
