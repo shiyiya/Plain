@@ -42,11 +42,11 @@
 
     <link rel="icon" href="<?php $this->options->fav() || $this->options->themeUrl('favicon.ico'); ?>"/>
     <link rel="manifest" href="<?php $this->options->manifest('manifest.json') || $this->options->themeUrl('manifest.json') ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/style.min.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/plain.css'); ?>" />
     
    <!--  <link rel="preload" href="<?php $this->options->backGroundImage(); ?>" as="image"> -->
     <link rel="preload" href="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js" as="script">
-    <link rel="preload" href="<?php $this->options->themeUrl('js/index.min.js');?>" as="script">
+    <link rel="preload" href="<?php $this->options->themeUrl('js/plain.js');?>" as="script">
 
 
     <!-- Google analytics -->
@@ -72,7 +72,7 @@
     
     <!-- Home does not need them -->
     <?php if(!$this->is('index')) :?>
-        <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/github-markdown.min.css'); ?>" />
+        <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('style/github-markdown.css'); ?>" />
         <?php if(in_array('Prism', $this->options->effect)): ?>
         <link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('prism/prism.css'); ?>" />
         <?php endif; ?>

@@ -44,7 +44,7 @@
 </div>
 </div>
 </body>
-<script src="<?php $this->options->themeUrl('js/index.min.js');?>"></script>
+<script src="<?php $this->options->themeUrl('js/plain.js');?>"></script>
 <?php if(in_array('Prism', $this->options->effect)) :?>
     <script src="<?php $this->options->themeUrl('prism/prism.js');?>"></script>
 <?php endif; ?>
