@@ -23,6 +23,8 @@ ui from **[ikirby](https://ikirby.me/)**
   -> 设置 -> 评论 -> 取消勾选反垃圾保护。
 - 将 `sw.min.js` 移动到 **网站根目录**，修改 `manifest.js` 文件
 
+- [no pwa version in here](https://github.com/shiyiya/Plain/tree/f2004bf1a477c4ea8546e2303b541c08cda4d42b)
+
 ## 主题介绍
 
 ![plain-offline](./screenshots/plain-offline.gif)
