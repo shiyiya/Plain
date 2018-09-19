@@ -8,30 +8,13 @@
   "dir": "rtl",
   "lang": "cn",
   "orientation": "portrait",
-  "theme_color": "#a4a9ad",
+  "theme_color": "#fff",
   "background_color": "#fff",
   "icons": [
     {
-      "src": "https://abs.twimg.com/responsive-web/web/ltr/icon-default.882fa4ccf6539401.png",
-      "sizes": "192x192",
+      "src": "https://i.loli.net/2018/09/19/5ba1b923c6a29.png",
+      "sizes": "32x32 57x57 60x60 76x76 72x72 96x96 114x114 120x120 144x144 152x152 128x128 192x192 512x512",
       "type": "image/png"
-    },
-    {
-      "src": "https://abs.twimg.com/responsive-web/web/ltr/icon-default.882fa4ccf6539401.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "screenshots/in-game-1x.jpg",
-      "sizes": "640x480",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "screenshots/in-game-2x.jpg",
-      "sizes": "1280x920",
-      "type": "image/jpeg"
     }
   ],
   "prefer_related_applications": false

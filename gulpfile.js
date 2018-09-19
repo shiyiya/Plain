@@ -6,24 +6,30 @@ var gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer')
 
 gulp.task('jscompress', function () {
-  return gulp
-    .src('./js/index.js')
-    .pipe(
-      babel({
-        presets: ['env']
-      })
-    )
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
-    .pipe(gulp.dest('./js'))
+  return (
+    gulp
+      .src('./js/index.js')
+      .pipe(
+        babel({
+          presets: ['env']
+        })
+      )
+      /* .pipe(rename({ suffix: '.min' })) */
+      .pipe(uglify())
+      .pipe(rename('plain.js'))
+      .pipe(gulp.dest('./js'))
+  )
 })
 gulp.task('csscompress', function () {
-  return gulp
-    .src(['./style/style.css'])
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('./style'))
+  return (
+    gulp
+      .src(['./style/style.css'])
+      /* .pipe(rename({ suffix: '.min' })) */
+      .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
+      .pipe(cleanCSS())
+      .pipe(rename('plain.css'))
+      .pipe(gulp.dest('./style'))
+  )
 })
 
 gulp.task('buildjs', function () {
@@ -39,6 +45,15 @@ gulp.task('buildjs', function () {
     .pipe(gulp.dest('./Plain/js'))
 })
 
+gulp.task('buildcss', function () {
+  return gulp
+    .src(['./style/style.css'])
+    .pipe(rename('plain.css'))
+    .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('./Plain/style'))
+})
+
 gulp.task('buildsw', function () {
   return gulp
     .src('./sw.js')
@@ -50,15 +65,6 @@ gulp.task('buildsw', function () {
     .pipe(rename('sw.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./Plain/'))
-})
-
-gulp.task('buildcss', function () {
-  return gulp
-    .src(['./style/style.css'])
-    .pipe(rename('plain.css'))
-    .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('./Plain/style'))
 })
 
 gulp.task('start', function () {
