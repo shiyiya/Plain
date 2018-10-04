@@ -6,5 +6,5 @@ yarn-error.log
 
 
 # my blog config
-./Plain/images/icon/*
+Plain/images/icon/
 sw.js
