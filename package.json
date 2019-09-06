@@ -1,7 +1,7 @@
 {
   "name": "plain",
   "description": "极简主题，专注于创作。",
-  "version": "1.0.0",
+  "version": "1.2.4",
   "main": "index.js",
   "repository": "git@github.com:ShiYiYa/Plain.git",
   "author": "ShiYi <eleven_g11@qq.com>",
