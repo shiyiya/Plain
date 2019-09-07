@@ -1,7 +1,7 @@
 /*---------------------------------------------*/
 ::-webkit-scrollbar {
   width: 8px;
-  /* height: 8px; */
+  height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -69,7 +69,7 @@ body {
 #pjax {
   max-width: 90%;
   width: 720px;
-  margin: 120px auto;
+  margin: 3em auto;
   display: block;
 }
 
