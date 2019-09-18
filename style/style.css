@@ -69,8 +69,9 @@ body {
 #pjax {
   max-width: 90%;
   width: 720px;
-  margin: 3em auto;
+  margin: 2em auto;
   display: block;
+  padding: 5%;
 }
 
 #root::before {
