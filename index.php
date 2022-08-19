@@ -6,8 +6,8 @@
  * @package Plain
  * @author  ShiYi,ikirby
  *
- * @version 1.2.4
- * @link https://www.runtua.cn/
+ * @version 1.2.5
+ * @link https://www.月色真美.life/
  * @link https://ikirby.me/
  */
 
