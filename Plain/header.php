@@ -63,7 +63,9 @@
 
 
     <!-- Google analytics -->
-    <?php _e($this->options->GoogleAnalytics) ?>
+    <?php if (!empty($this->options->GoogleAnalytics)) : ?>
+        <?php _e($this->options->GoogleAnalytics) ?>
+    <?php endif; ?>
 
 
     <!-- Used CDN -->

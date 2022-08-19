@@ -11,7 +11,7 @@ gulp.task('jscompress', function () {
       .src('./js/index.js')
       .pipe(
         babel({
-          presets: ['env']
+          presets: ['@babel/preset-env'],
         })
       )
       /* .pipe(rename({ suffix: '.min' })) */
@@ -25,7 +25,7 @@ gulp.task('csscompress', function () {
     gulp
       .src(['./style/style.css'])
       /* .pipe(rename({ suffix: '.min' })) */
-      .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
+      .pipe(autoprefixer({ cascade: false }))
       .pipe(cleanCSS())
       .pipe(rename('plain.css'))
       .pipe(gulp.dest('./style'))
@@ -37,7 +37,7 @@ gulp.task('buildjs', function () {
     .src(['./js/index.js'])
     .pipe(
       babel({
-        presets: ['env']
+        presets: ['@babel/preset-env'],
       })
     )
     .pipe(rename('plain.js'))
@@ -49,27 +49,27 @@ gulp.task('buildcss', function () {
   return gulp
     .src(['./style/style.css'])
     .pipe(rename('plain.css'))
-    .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
+    .pipe(autoprefixer({ cascade: false }))
     .pipe(cleanCSS())
     .pipe(gulp.dest('./Plain/style'))
 })
 
-gulp.task('buildsw', function () {
-  return gulp
-    .src('./sw.js')
-    .pipe(
-      babel({
-        presets: ['env']
-      })
-    )
-    .pipe(rename('sw.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./Plain/'))
-})
+// gulp.task('buildsw', function () {
+//   return gulp
+//     .src('./sw.js')
+//     .pipe(
+//       babel({
+//         presets: ['@babel/preset-env'],
+//       })
+//     )
+//     .pipe(rename('sw.min.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('./Plain/'))
+// })
 
 gulp.task('start', function () {
-  gulp.watch('js/index.js', ['jscompress'])
-  gulp.watch('style/style.css', ['csscompress'])
+  gulp.watch('js/index.js', gulp.parallel(['jscompress']))
+  gulp.watch('style/style.css', gulp.parallel(['csscompress']))
 })
 
-gulp.task('build', ['buildjs', 'buildcss', 'buildsw'])
+gulp.task('build', gulp.parallel(['buildjs', 'buildcss']))
